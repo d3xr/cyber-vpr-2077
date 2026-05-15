@@ -1,0 +1,4626 @@
+{
+  "version": "4.0.0",
+  "missions": [
+    {
+      "id": "m1",
+      "code": "BRAINDANCE_DECRYPTION",
+      "title": "BRAINDANCE DECRYPTION",
+      "subtitle": "AUDIO INTERCEPT // 5 PTS",
+      "skill": "listening",
+      "subject": "english",
+      "districtTag": "WATSON",
+      "maxPoints": 5,
+      "variants": [
+        {
+          "id": "v1_tom",
+          "audioFile": "/sounds/m1_v1_tom.m4a",
+          "audioScript": "Hello! My name is Tom. I am nine years old. I live in London with my mum, my dad and my little sister Lily. I have got a pet, it's a brown dog. His name is Max. My favourite day is Saturday, because I play football with my dad in the park. I like pizza and apples. I don't like milk.",
+          "questions": [
+            {
+              "id": "A",
+              "prompt": "How old is Tom?",
+              "options": [
+                "seven",
+                "eight",
+                "nine"
+              ],
+              "answer": 2,
+              "explanation": "В тексте: «I am nine years old». Девять — третий вариант."
+            },
+            {
+              "id": "B",
+              "prompt": "Who does Tom live with?",
+              "options": [
+                "his family",
+                "his grandma",
+                "his friend"
+              ],
+              "answer": 0,
+              "explanation": "В тексте перечислены mum, dad, sister — это его семья."
+            },
+            {
+              "id": "C",
+              "prompt": "What pet has Tom got?",
+              "options": [
+                "a cat",
+                "a dog",
+                "a parrot"
+              ],
+              "answer": 1,
+              "explanation": "«It's a brown dog. His name is Max.» — собака."
+            },
+            {
+              "id": "D",
+              "prompt": "What does Tom do on Saturdays?",
+              "options": [
+                "reads books",
+                "plays football",
+                "watches TV"
+              ],
+              "answer": 1,
+              "explanation": "«I play football with my dad in the park» — играет в футбол."
+            },
+            {
+              "id": "E",
+              "prompt": "What does Tom NOT like?",
+              "options": [
+                "pizza",
+                "apples",
+                "milk"
+              ],
+              "answer": 2,
+              "explanation": "«I don't like milk» — не любит молоко."
+            }
+          ]
+        },
+        {
+          "id": "v2_lily",
+          "audioFile": "/sounds/m1_v2_lily.m4a",
+          "audioScript": "Hi! My name is Lily. I am ten years old. I live in Birmingham with my mum and my granny. I have got a pet. It is a black cat. Her name is Luna. My favourite day is Friday, because I go to the swimming pool with my friends. I like ice-cream and bananas. I don't like fish.",
+          "questions": [
+            {
+              "id": "A",
+              "prompt": "How old is Lily?",
+              "options": [
+                "nine",
+                "ten",
+                "eleven"
+              ],
+              "answer": 1,
+              "explanation": "«I am ten years old» — десять, второй вариант."
+            },
+            {
+              "id": "B",
+              "prompt": "Who does Lily live with?",
+              "options": [
+                "her dad and brother",
+                "her mum and granny",
+                "her aunt"
+              ],
+              "answer": 1,
+              "explanation": "«with my mum and my granny» — мама и бабушка."
+            },
+            {
+              "id": "C",
+              "prompt": "What pet has Lily got?",
+              "options": [
+                "a dog",
+                "a cat",
+                "a rabbit"
+              ],
+              "answer": 1,
+              "explanation": "«It is a black cat» — чёрная кошка."
+            },
+            {
+              "id": "D",
+              "prompt": "What does Lily do on Fridays?",
+              "options": [
+                "plays football",
+                "goes swimming",
+                "reads books"
+              ],
+              "answer": 1,
+              "explanation": "«I go to the swimming pool» — плавать."
+            },
+            {
+              "id": "E",
+              "prompt": "What does Lily NOT like?",
+              "options": [
+                "ice-cream",
+                "bananas",
+                "fish"
+              ],
+              "answer": 2,
+              "explanation": "«I don't like fish» — не любит рыбу."
+            }
+          ]
+        },
+        {
+          "id": "v3_alex",
+          "audioFile": "/sounds/m1_v3_alex.m4a",
+          "audioScript": "Hi! I am Alex. I am eleven years old. I live in a small town near Moscow with my parents and my big brother Nikita. Nikita is fourteen. We have got a parrot. His name is Kesha. I love sports. I play tennis with my brother every Sunday. My favourite food is pasta. I don't like soup.",
+          "questions": [
+            {
+              "id": "A",
+              "prompt": "How old is Alex?",
+              "options": [
+                "ten",
+                "eleven",
+                "twelve"
+              ],
+              "answer": 1,
+              "explanation": "«I am eleven years old» — одиннадцать."
+            },
+            {
+              "id": "B",
+              "prompt": "Who does Alex live with?",
+              "options": [
+                "his grandma",
+                "his friend",
+                "his parents and brother"
+              ],
+              "answer": 2,
+              "explanation": "«with my parents and my big brother»."
+            },
+            {
+              "id": "C",
+              "prompt": "What pet has Alex got?",
+              "options": [
+                "a parrot",
+                "a hamster",
+                "a dog"
+              ],
+              "answer": 0,
+              "explanation": "«We have got a parrot» — попугай."
+            },
+            {
+              "id": "D",
+              "prompt": "What does Alex do on Sundays?",
+              "options": [
+                "plays tennis",
+                "rides a bike",
+                "swims"
+              ],
+              "answer": 0,
+              "explanation": "«I play tennis ... every Sunday»."
+            },
+            {
+              "id": "E",
+              "prompt": "What does Alex NOT like?",
+              "options": [
+                "pasta",
+                "soup",
+                "tennis"
+              ],
+              "answer": 1,
+              "explanation": "«I don't like soup»."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "code": "DATASHARD_RECOVERY",
+      "title": "DATASHARD RECOVERY",
+      "subtitle": "TEXT INTEL // 5 PTS",
+      "skill": "reading",
+      "subject": "english",
+      "districtTag": "WESTBROOK",
+      "maxPoints": 5,
+      "variants": [
+        {
+          "id": "v1_sarah",
+          "profile": "PROFILE: SARAH MILLER",
+          "datapad": "Sarah is a schoolgirl. She is ten years old. Sarah lives in Manchester with her family. She has got a mum, a dad and a big brother Jack. Jack is fifteen. The family has got a cat. Its name is Whiskers. Sarah's favourite subject at school is Art. She likes drawing pictures of animals. After school Sarah and Jack ride their bikes in the park. On Sundays Sarah visits her grandma. Her grandma makes apple pies. Sarah loves them!",
+          "questions": [
+            {
+              "id": "A",
+              "prompt": "Sarah is …",
+              "options": [
+                "a teacher",
+                "a pupil",
+                "a doctor"
+              ],
+              "answer": 1,
+              "explanation": "«Sarah is a schoolgirl» — школьница, то есть pupil."
+            },
+            {
+              "id": "B",
+              "prompt": "Sarah's brother is …",
+              "options": [
+                "ten",
+                "fifteen",
+                "twelve"
+              ],
+              "answer": 1,
+              "explanation": "«Jack is fifteen» — брату 15."
+            },
+            {
+              "id": "C",
+              "prompt": "The family's pet is …",
+              "options": [
+                "a cat",
+                "a dog",
+                "a rabbit"
+              ],
+              "answer": 0,
+              "explanation": "«The family has got a cat» — кот."
+            },
+            {
+              "id": "D",
+              "prompt": "Sarah's favourite subject is …",
+              "options": [
+                "Maths",
+                "PE",
+                "Art"
+              ],
+              "answer": 2,
+              "explanation": "«Sarah's favourite subject at school is Art»."
+            },
+            {
+              "id": "E",
+              "prompt": "On Sundays Sarah visits …",
+              "options": [
+                "her friend",
+                "her grandma",
+                "her aunt"
+              ],
+              "answer": 1,
+              "explanation": "«On Sundays Sarah visits her grandma»."
+            }
+          ]
+        },
+        {
+          "id": "v2_ben",
+          "profile": "PROFILE: BEN JOHNSON",
+          "datapad": "Ben is ten years old. He lives in Liverpool with his mum, his dad and his big sister Emma. Emma is twelve. The family has got a small dog. The dog's name is Rocky. Ben loves football. He plays with his friends every day after school. His favourite team is from Spain. On Saturdays Ben and his dad go to the stadium to watch a real match. Ben wants to be a football player when he is older.",
+          "questions": [
+            {
+              "id": "A",
+              "prompt": "Ben is …",
+              "options": [
+                "nine",
+                "ten",
+                "eleven"
+              ],
+              "answer": 1,
+              "explanation": "«Ben is ten years old»."
+            },
+            {
+              "id": "B",
+              "prompt": "Ben's sister Emma is …",
+              "options": [
+                "ten",
+                "twelve",
+                "fifteen"
+              ],
+              "answer": 1,
+              "explanation": "«Emma is twelve»."
+            },
+            {
+              "id": "C",
+              "prompt": "The family's pet is …",
+              "options": [
+                "a cat",
+                "a dog",
+                "a parrot"
+              ],
+              "answer": 1,
+              "explanation": "«The family has got a small dog»."
+            },
+            {
+              "id": "D",
+              "prompt": "Ben's favourite sport is …",
+              "options": [
+                "tennis",
+                "football",
+                "swimming"
+              ],
+              "answer": 1,
+              "explanation": "«Ben loves football»."
+            },
+            {
+              "id": "E",
+              "prompt": "On Saturdays Ben goes …",
+              "options": [
+                "to school",
+                "to the park",
+                "to the stadium"
+              ],
+              "answer": 2,
+              "explanation": "«go to the stadium to watch a real match»."
+            }
+          ]
+        },
+        {
+          "id": "v3_mia",
+          "profile": "PROFILE: MIA GREEN",
+          "datapad": "Mia is nine years old. She is from a small town in Scotland. Mia lives with her mum and her two cats, Misty and Smokey. Mia has not got a brother or a sister, but she has got many friends. Her best friend is Olivia. They go to the same school. Mia's favourite subject is Science, because she likes experiments. After school Mia plays the piano. On Sundays Mia and her mum cook pancakes for breakfast.",
+          "questions": [
+            {
+              "id": "A",
+              "prompt": "Mia is …",
+              "options": [
+                "eight",
+                "nine",
+                "ten"
+              ],
+              "answer": 1,
+              "explanation": "«Mia is nine years old»."
+            },
+            {
+              "id": "B",
+              "prompt": "Mia lives with …",
+              "options": [
+                "her mum",
+                "her grandma",
+                "her dad"
+              ],
+              "answer": 0,
+              "explanation": "«lives with her mum and her two cats»."
+            },
+            {
+              "id": "C",
+              "prompt": "How many cats has Mia got?",
+              "options": [
+                "one",
+                "two",
+                "three"
+              ],
+              "answer": 1,
+              "explanation": "«her two cats, Misty and Smokey»."
+            },
+            {
+              "id": "D",
+              "prompt": "Mia's favourite subject is …",
+              "options": [
+                "Music",
+                "PE",
+                "Science"
+              ],
+              "answer": 2,
+              "explanation": "«favourite subject is Science»."
+            },
+            {
+              "id": "E",
+              "prompt": "On Sundays Mia and her mum …",
+              "options": [
+                "cook pancakes",
+                "watch films",
+                "go shopping"
+              ],
+              "answer": 0,
+              "explanation": "«cook pancakes for breakfast»."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "code": "ICE_BREAKER",
+      "title": "ICE BREAKER",
+      "subtitle": "GRAMMAR HACK // 5 PTS",
+      "skill": "grammar",
+      "subject": "english",
+      "districtTag": "CITY CENTER",
+      "maxPoints": 5,
+      "variants": [
+        {
+          "id": "v1_mike",
+          "intro": "CORP ICE detected. Inject correct tokens to bypass.",
+          "template": "Hi! My name {1} Mike. I {2} got a big family. We {3} in a small house in Bristol. My dad is a doctor, he works {4} a hospital. My mum {5} English at school.",
+          "blanks": [
+            {
+              "id": 1,
+              "options": [
+                "am",
+                "is",
+                "are"
+              ],
+              "answer": 1,
+              "explanation": "«My name» — это «он/оно», 3-е лицо ед. ч. → is."
+            },
+            {
+              "id": 2,
+              "options": [
+                "have",
+                "has",
+                "had"
+              ],
+              "answer": 0,
+              "explanation": "Местоимение «I» → have got, не has."
+            },
+            {
+              "id": 3,
+              "options": [
+                "live",
+                "lives",
+                "living"
+              ],
+              "answer": 0,
+              "explanation": "«We» — мн. число, в Present Simple без -s → live."
+            },
+            {
+              "id": 4,
+              "options": [
+                "on",
+                "in",
+                "at"
+              ],
+              "answer": 1,
+              "explanation": "Внутри здания/учреждения говорим «in a hospital»."
+            },
+            {
+              "id": 5,
+              "options": [
+                "teach",
+                "teaches",
+                "teaching"
+              ],
+              "answer": 1,
+              "explanation": "«My mum» — 3-е лицо ед. ч., +es → teaches."
+            }
+          ]
+        },
+        {
+          "id": "v2_anna",
+          "intro": "Inject correct tokens. Anna's profile is corrupted.",
+          "template": "Hello! I {1} Anna. I am from Russia. I {2} a sister. Her name is Mary. We {3} to school together. Mary {4} maths. After school we {5} in the park.",
+          "blanks": [
+            {
+              "id": 1,
+              "options": [
+                "am",
+                "is",
+                "are"
+              ],
+              "answer": 0,
+              "explanation": "Местоимение «I» → am."
+            },
+            {
+              "id": 2,
+              "options": [
+                "have",
+                "has",
+                "are"
+              ],
+              "answer": 0,
+              "explanation": "«I» → have, не has."
+            },
+            {
+              "id": 3,
+              "options": [
+                "walk",
+                "walks",
+                "walking"
+              ],
+              "answer": 0,
+              "explanation": "«We» — мн. число, без -s → walk."
+            },
+            {
+              "id": 4,
+              "options": [
+                "like",
+                "likes",
+                "liking"
+              ],
+              "answer": 1,
+              "explanation": "«Mary» — 3-е лицо ед. ч. → likes."
+            },
+            {
+              "id": 5,
+              "options": [
+                "play",
+                "plays",
+                "playing"
+              ],
+              "answer": 0,
+              "explanation": "«We» → play, без -s."
+            }
+          ]
+        },
+        {
+          "id": "v3_kate",
+          "intro": "ICE bypass routine 03. Decode Kate's bio.",
+          "template": "Kate {1} eight years old. She {2} got a brother. The brother's name {3} Sam. Sam {4} ten. They {5} football together every weekend.",
+          "blanks": [
+            {
+              "id": 1,
+              "options": [
+                "am",
+                "is",
+                "are"
+              ],
+              "answer": 1,
+              "explanation": "«Kate» — 3-е лицо ед. ч. → is."
+            },
+            {
+              "id": 2,
+              "options": [
+                "have",
+                "has",
+                "had"
+              ],
+              "answer": 1,
+              "explanation": "«She» — 3-е лицо → has got."
+            },
+            {
+              "id": 3,
+              "options": [
+                "am",
+                "is",
+                "are"
+              ],
+              "answer": 1,
+              "explanation": "«The brother's name» — 3-е лицо ед. ч. → is."
+            },
+            {
+              "id": 4,
+              "options": [
+                "am",
+                "is",
+                "are"
+              ],
+              "answer": 1,
+              "explanation": "«Sam» — 3-е лицо ед. ч. → is."
+            },
+            {
+              "id": 5,
+              "options": [
+                "play",
+                "plays",
+                "playing"
+              ],
+              "answer": 0,
+              "explanation": "«They» — мн. число → play, без -s."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "code": "NCPD_FIXER_PROFILE",
+      "title": "NCPD FIXER PROFILE",
+      "subtitle": "WRITING UPLINK // 10 PTS",
+      "skill": "writing",
+      "subject": "english",
+      "districtTag": "PACIFICA",
+      "maxPoints": 10,
+      "fields": [
+        {
+          "id": "name",
+          "label": "NAME",
+          "placeholder": "Type your first name",
+          "points": 1,
+          "minLength": 2,
+          "kind": "text"
+        },
+        {
+          "id": "surname",
+          "label": "SURNAME",
+          "placeholder": "Type your last name",
+          "points": 1,
+          "minLength": 2,
+          "kind": "text"
+        },
+        {
+          "id": "age",
+          "label": "AGE",
+          "placeholder": "How old are you? (number)",
+          "points": 1,
+          "minLength": 1,
+          "kind": "number",
+          "min": 6,
+          "max": 12
+        },
+        {
+          "id": "country",
+          "label": "COUNTRY",
+          "placeholder": "Where do you live?",
+          "points": 1,
+          "minLength": 2,
+          "kind": "text"
+        },
+        {
+          "id": "city",
+          "label": "CITY",
+          "placeholder": "Your city",
+          "points": 1,
+          "minLength": 2,
+          "kind": "text"
+        },
+        {
+          "id": "family",
+          "label": "FAMILY",
+          "placeholder": "I have got a mum, a dad and...",
+          "points": 2,
+          "minLength": 8,
+          "kind": "sentence"
+        },
+        {
+          "id": "pet",
+          "label": "PET",
+          "placeholder": "I have got a... or I haven't got a pet.",
+          "points": 1,
+          "minLength": 8,
+          "kind": "sentence"
+        },
+        {
+          "id": "subject",
+          "label": "FAVOURITE SUBJECT",
+          "placeholder": "Maths, Art, PE, English...",
+          "points": 1,
+          "minLength": 2,
+          "kind": "text"
+        },
+        {
+          "id": "hobby",
+          "label": "HOBBY",
+          "placeholder": "I like playing football / drawing...",
+          "points": 1,
+          "minLength": 8,
+          "kind": "sentence"
+        }
+      ]
+    },
+    {
+      "id": "m_rus",
+      "code": "LANG_MATRIX_DEBUG",
+      "title": "LANG MATRIX DEBUG",
+      "subtitle": "RUSSIAN VPR // 5 PTS",
+      "skill": "quiz",
+      "subject": "russian",
+      "themeColor": "cyan",
+      "districtTag": "WATSON · LANG-NET",
+      "maxPoints": 5,
+      "variants": [
+        {
+          "id": "v1_orfoepia",
+          "datapad": "[lang_matrix.exe] Орфоэпический модуль повреждён. Восстанови ударения, иначе нейросеть начнёт говорить как корпорат с акцентом.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Где правильно стоит ударение в слове «алфавит»?",
+              "options": [
+                "алфа́вит",
+                "алфави́т",
+                "оба варианта допустимы"
+              ],
+              "answer": 1,
+              "explanation": "Норма: алфави́т — ударение на «и» (третий слог). «АлфА́вит» — распространённая ошибка."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Где правильно стоит ударение в слове «звонит»?",
+              "options": [
+                "зво́нит",
+                "звони́т",
+                "оба варианта допустимы"
+              ],
+              "answer": 1,
+              "explanation": "Норма: звони́т — ударение на «и». Произношение «зво́нит» — речевая ошибка."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Где правильно стоит ударение в слове «торты»?",
+              "options": [
+                "то́рты",
+                "торты́",
+                "оба варианта допустимы"
+              ],
+              "answer": 0,
+              "explanation": "Норма: то́рты — ударение на «о», во всех формах множественного числа ударение остаётся на основе (то́рты, то́ртов, то́ртам)."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Где правильно стоит ударение в слове «щавель»?",
+              "options": [
+                "ща́вель",
+                "щаве́ль",
+                "оба варианта допустимы"
+              ],
+              "answer": 1,
+              "explanation": "Норма: щаве́ль — ударение на «е» (второй слог)."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Где правильно стоит ударение в слове «банты»?",
+              "options": [
+                "ба́нты",
+                "банты́",
+                "оба варианта допустимы"
+              ],
+              "answer": 0,
+              "explanation": "Норма: ба́нты — ударение на «а», даже во множественном числе. Произношение «банты́» — речевая ошибка."
+            }
+          ]
+        },
+        {
+          "id": "v2_synonyms",
+          "datapad": "[lang_matrix.exe] Лексическая база сбоит. Подбери правильные пары слов, чтобы нейроконтекст ожил.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Подбери СИНОНИМ к слову «храбрый»:",
+              "options": [
+                "умный",
+                "смелый",
+                "добрый"
+              ],
+              "answer": 1,
+              "explanation": "Синонимы — слова с близким значением. Храбрый = смелый, отважный, мужественный."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Подбери СИНОНИМ к слову «грустный»:",
+              "options": [
+                "весёлый",
+                "печальный",
+                "усталый"
+              ],
+              "answer": 1,
+              "explanation": "Грустный = печальный, тоскливый. «Весёлый» — антоним."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Подбери АНТОНИМ к слову «трудолюбивый»:",
+              "options": [
+                "ленивый",
+                "умный",
+                "сильный"
+              ],
+              "answer": 0,
+              "explanation": "Антонимы — слова с противоположным значением. Трудолюбивый ↔ ленивый."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Подбери АНТОНИМ к слову «горячий»:",
+              "options": [
+                "тёплый",
+                "холодный",
+                "сухой"
+              ],
+              "answer": 1,
+              "explanation": "Антоним: горячий ↔ холодный. «Тёплый» — близко, но не антоним."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Какое слово близко по значению к слову «доблестный»?",
+              "options": [
+                "смешной",
+                "большой",
+                "отважный"
+              ],
+              "answer": 2,
+              "explanation": "Доблестный = отважный, храбрый, мужественный."
+            }
+          ]
+        },
+        {
+          "id": "v3_parts_of_speech",
+          "datapad": "[lang_matrix.exe] Анализатор частей речи не работает. Определи каждое слово в потоке.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Какой частью речи является слово «бежал» в предложении «Мальчик бежал по дороге»?",
+              "options": [
+                "существительное",
+                "глагол",
+                "прилагательное"
+              ],
+              "answer": 1,
+              "explanation": "Глагол отвечает на вопрос «что делал?» — бежал."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Какой частью речи является слово «зелёный»?",
+              "options": [
+                "существительное",
+                "глагол",
+                "прилагательное"
+              ],
+              "answer": 2,
+              "explanation": "Прилагательное обозначает признак предмета и отвечает на вопрос «какой?» — зелёный."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какой частью речи является слово «стол»?",
+              "options": [
+                "существительное",
+                "глагол",
+                "прилагательное"
+              ],
+              "answer": 0,
+              "explanation": "Существительное — предмет, отвечает на «что?» — стол."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какой частью речи является слово «быстро»?",
+              "options": [
+                "прилагательное",
+                "наречие",
+                "глагол"
+              ],
+              "answer": 1,
+              "explanation": "Наречие отвечает на «как?» и не изменяется. Быстро — наречие."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Какой частью речи является слово «и» в предложении «Мама и папа дома»?",
+              "options": [
+                "союз",
+                "предлог",
+                "глагол"
+              ],
+              "answer": 0,
+              "explanation": "Союз «и» соединяет однородные подлежащие."
+            }
+          ]
+        },
+        {
+          "id": "v4_morfemy",
+          "datapad": "[lang_matrix.exe] Морфемный сканер сломался. Разбери слова по составу.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "В слове «подосиновик» приставка:",
+              "options": [
+                "под-",
+                "по-",
+                "подос-"
+              ],
+              "answer": 0,
+              "explanation": "Приставка «под-» (как в «подберёзовик»). Корень «-осин-» (от «осина»)."
+            },
+            {
+              "id": "Q2",
+              "prompt": "В слове «подснежник» корень:",
+              "options": [
+                "-снег-",
+                "-снеж-",
+                "-под-"
+              ],
+              "answer": 1,
+              "explanation": "Корень «-снеж-» (чередование г/ж: снег → снежный). Приставка «под-», суффикс «-ник-»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "В слове «домик» суффикс:",
+              "options": [
+                "-ом-",
+                "-ик-",
+                "нет суффикса"
+              ],
+              "answer": 1,
+              "explanation": "Суффикс «-ик-» — уменьшительно-ласкательный (дом → домик). Корень «дом-»."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В слове «школьник» окончание:",
+              "options": [
+                "-ник-",
+                "-ик-",
+                "нулевое"
+              ],
+              "answer": 2,
+              "explanation": "У слова «школьник» нулевое окончание (мужской род, и.п.). Сравни: школьник-а — окончание «-а»."
+            },
+            {
+              "id": "Q5",
+              "prompt": "В слове «лесник» корень:",
+              "options": [
+                "лес-",
+                "ник-",
+                "лесн-"
+              ],
+              "answer": 0,
+              "explanation": "Корень «лес-» (общее у однокоренных: лес, лесной, лесник). «-ник-» — суффикс."
+            }
+          ]
+        },
+        {
+          "id": "v5_orfografia",
+          "datapad": "[lang_matrix.exe] Антивирус нашёл орфографические ошибки. Найди слово, написанное БЕЗ ОШИБОК.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Какое слово написано БЕЗ ошибок?",
+              "options": [
+                "лестница",
+                "лесница",
+                "лессница"
+              ],
+              "answer": 0,
+              "explanation": "Правильно: лестница (непроизносимая «т», проверочное — лестничка)."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Какое слово написано БЕЗ ошибок?",
+              "options": [
+                "солнце",
+                "сонце",
+                "солцне"
+              ],
+              "answer": 0,
+              "explanation": "Правильно: солнце (непроизносимая «л», проверочное — солнечный)."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какое слово написано БЕЗ ошибок?",
+              "options": [
+                "ученик",
+                "учиник",
+                "ученеик"
+              ],
+              "answer": 0,
+              "explanation": "Правильно: ученик (от «учить», проверочное — учится)."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какое слово написано БЕЗ ошибок?",
+              "options": [
+                "сабака",
+                "собака",
+                "сабока"
+              ],
+              "answer": 1,
+              "explanation": "Правильно: собака — словарное слово, нужно запомнить."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Какое слово написано БЕЗ ошибок?",
+              "options": [
+                "воробей",
+                "варобей",
+                "воробьей"
+              ],
+              "answer": 0,
+              "explanation": "Правильно: воробей — словарное слово."
+            }
+          ]
+        },
+        {
+          "id": "v6_predlozhenie",
+          "datapad": "[lang_matrix.exe] Синтаксический парсер выдаёт мусор. Определи главные члены и тип предложения.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "В предложении «Мальчик читает книгу» подлежащее:",
+              "options": [
+                "мальчик",
+                "читает",
+                "книгу"
+              ],
+              "answer": 0,
+              "explanation": "Подлежащее — кто? — мальчик. Сказуемое — что делает? — читает."
+            },
+            {
+              "id": "Q2",
+              "prompt": "В предложении «Мальчик читает книгу» сказуемое:",
+              "options": [
+                "мальчик",
+                "читает",
+                "книгу"
+              ],
+              "answer": 1,
+              "explanation": "Сказуемое — что делает? — читает. «Книгу» — второстепенный член (дополнение)."
+            },
+            {
+              "id": "Q3",
+              "prompt": "В предложении «Дождь идёт всё утро» подлежащее:",
+              "options": [
+                "дождь",
+                "идёт",
+                "утро"
+              ],
+              "answer": 0,
+              "explanation": "Что делает? — идёт. Что идёт? — дождь. Дождь — подлежащее."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какое предложение по цели высказывания вопросительное?",
+              "options": [
+                "Мама, я пришёл!",
+                "Где ты был?",
+                "Я гулял в парке."
+              ],
+              "answer": 1,
+              "explanation": "Вопросительное предложение задаёт вопрос и часто оканчивается «?»."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Какое предложение восклицательное?",
+              "options": [
+                "Какой красивый закат!",
+                "Сегодня тепло.",
+                "Мы идём в парк?"
+              ],
+              "answer": 0,
+              "explanation": "Восклицательное выражает сильное чувство, оканчивается «!»."
+            }
+          ]
+        },
+        {
+          "id": "v7_tekst",
+          "datapad": "[lang_matrix.exe] Восстановленный текст из старого датапада. Прочитай и ответь.\n\n«Старик сажал яблони. Ему сказали: „Зачем тебе эти яблони? Долго ждать с этих яблонь плода, и ты не съешь с них яблочка“. Старик сказал: „Я не съем — другие съедят, мне спасибо скажут“».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Что делал старик?",
+              "options": [
+                "копал землю",
+                "сажал яблони",
+                "собирал яблоки"
+              ],
+              "answer": 1,
+              "explanation": "В первом предложении: «Старик сажал яблони»."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Почему люди удивлялись?",
+              "options": [
+                "он был очень молодой",
+                "он не успеет съесть яблоки",
+                "он не умел сажать"
+              ],
+              "answer": 1,
+              "explanation": "«Долго ждать с этих яблонь плода, и ты не съешь с них яблочка» — старик не доживёт до плодов."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Что ответил старик?",
+              "options": [
+                "Мне всё равно",
+                "Другие съедят и спасибо скажут",
+                "Я доживу до плодов"
+              ],
+              "answer": 1,
+              "explanation": "Прямая цитата: «Я не съем — другие съедят, мне спасибо скажут»."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Главная мысль текста:",
+              "options": [
+                "Старики всегда правы",
+                "Доброе дело делается для других",
+                "Не надо сажать яблони"
+              ],
+              "answer": 1,
+              "explanation": "Старик трудится не для себя, а для других — это и есть мысль о бескорыстии и заботе о будущем."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится этот текст?",
+              "options": [
+                "басня",
+                "рассказ",
+                "сказка"
+              ],
+              "answer": 1,
+              "explanation": "Это короткий прозаический текст о бытовой ситуации, без волшебства, без морали в стихах — рассказ (притча Л. Н. Толстого)."
+            }
+          ]
+        },
+        {
+          "id": "v8_complex",
+          "datapad": "[lang_matrix.exe] КОМПЛЕКСНЫЙ ВПР-СРЕЗ. Каждый вопрос — другая тема. Это формат настоящей контрольной.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Где правильно стоит ударение в слове «средства»?",
+              "options": [
+                "сре́дства",
+                "средства́",
+                "оба варианта допустимы"
+              ],
+              "answer": 0,
+              "explanation": "Норма: сре́дства — ударение на «е». Во множественном числе ударение остаётся на корне."
+            },
+            {
+              "id": "Q2",
+              "prompt": "К какому склонению относится существительное «лиса»?",
+              "options": [
+                "1-е склонение",
+                "2-е склонение",
+                "3-е склонение"
+              ],
+              "answer": 0,
+              "explanation": "Существительные ж. р. с окончанием -а/-я (лиса, мама, земля) — 1-е склонение."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какое окончание у слова «лесник» в предложении «Старый лесник идёт по тропе»?",
+              "options": [
+                "нулевое окончание",
+                "окончание -ик",
+                "окончание -а"
+              ],
+              "answer": 0,
+              "explanation": "В именительном падеже единственного числа у слова «лесник» нулевое окончание. Корень — «лес-», суффикс — «-ник-». Сравни «лесника́» — там окончание «-а»."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Подбери АНТОНИМ к слову «смелый»:",
+              "options": [
+                "храбрый",
+                "трусливый",
+                "сильный"
+              ],
+              "answer": 1,
+              "explanation": "Антонимы — слова с противоположным значением. Смелый ↔ трусливый. «Храбрый» — синоним."
+            },
+            {
+              "id": "Q5",
+              "prompt": "В каком предложении подлежащее «снег»?",
+              "options": [
+                "Дети играют в снег.",
+                "Снег падает большими хлопьями.",
+                "На снегу следы зайца."
+              ],
+              "answer": 1,
+              "explanation": "Подлежащее отвечает на вопрос «кто? что?» и связано со сказуемым (что делает?). «Снег падает» — снег подлежащее, падает — сказуемое."
+            }
+          ]
+        },
+        {
+          "id": "v9_morphology_mix",
+          "datapad": "[lang_matrix.exe] Морфо-сканер перегружен: каждый вопрос — другая часть речи. Прогони слова через анализатор и не путай род с числом.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "К какому склонению относится существительное «площадь»?",
+              "options": [
+                "1-е склонение",
+                "2-е склонение",
+                "3-е склонение"
+              ],
+              "answer": 2,
+              "explanation": "Существительные ж. р. с мягким знаком на конце (площадь, мышь, тетрадь) — 3-е склонение. 1-е — ж./м. р. на -а/-я; 2-е — м. р. с нулевым окончанием и ср. р. на -о/-е."
+            },
+            {
+              "id": "Q2",
+              "prompt": "В каком падеже стоит существительное в словосочетании «гулял по парку»?",
+              "options": [
+                "родительный",
+                "дательный",
+                "предложный"
+              ],
+              "answer": 1,
+              "explanation": "Гулял (по чему?) по парку. Дательный падеж отвечает на вопросы «кому? чему?», часто с предлогами «к», «по»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Определи время глагола «прибежал»:",
+              "options": [
+                "настоящее время",
+                "прошедшее время",
+                "будущее время"
+              ],
+              "answer": 1,
+              "explanation": "Глагол «прибежал» имеет суффикс -л-, который указывает на прошедшее время. Действие уже совершилось."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В словосочетании «синему морю» прилагательное стоит в форме:",
+              "options": [
+                "м. р., ед. ч., дат. п.",
+                "ср. р., ед. ч., дат. п.",
+                "ср. р., мн. ч., предл. п."
+              ],
+              "answer": 1,
+              "explanation": "Прилагательное согласуется с существительным. «Море» — ср. р., ед. ч.; «(к чему?) морю» — дательный падеж. Окончание -ему характерно для дат. п. ср. р."
+            },
+            {
+              "id": "Q5",
+              "prompt": "В слове «перелесок» какая морфема «пере-»?",
+              "options": [
+                "приставка",
+                "корень",
+                "суффикс"
+              ],
+              "answer": 0,
+              "explanation": "«Пере-» — приставка (как в словах «перелёт», «перепрыгнуть»). Корень «-лес-», суффикс «-ок-», нулевое окончание."
+            }
+          ]
+        },
+        {
+          "id": "v10_text_chocolate",
+          "datapad": "[lang_matrix.exe] Восстановленный мини-текст из довоенного датапада. Прочитай и ответь на вопросы.\n\n«Шоколад появился в Европе только пятьсот лет назад. Его привезли из Америки. Сначала шоколад был очень дорогим: его пили только короли и богачи. Шоколад был горьким и тёплым напитком. Лишь спустя много лет в него стали добавлять сахар и молоко. Так появился привычный нам сладкий шоколад».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Откуда шоколад привезли в Европу?",
+              "options": [
+                "из Африки",
+                "из Америки",
+                "из Азии"
+              ],
+              "answer": 1,
+              "explanation": "Прямая цитата из текста: «Его привезли из Америки»."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Каким был шоколад вначале?",
+              "options": [
+                "сладким и холодным",
+                "горьким и тёплым напитком",
+                "твёрдым и солёным"
+              ],
+              "answer": 1,
+              "explanation": "В тексте сказано: «Шоколад был горьким и тёплым напитком». О плитках в начале речь не идёт."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какой заголовок лучше подходит к этому тексту?",
+              "options": [
+                "История шоколада",
+                "Король Европы",
+                "Как варить какао"
+              ],
+              "answer": 0,
+              "explanation": "Текст рассказывает, как шоколад появился, изменялся и стал сладким — это история шоколада. О королях и о рецептах подробно не говорится."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Подбери СИНОНИМ к слову «привычный» из последнего предложения:",
+              "options": [
+                "незнакомый",
+                "обычный",
+                "сложный"
+              ],
+              "answer": 1,
+              "explanation": "Привычный = обычный, знакомый. «Незнакомый» — антоним."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Какое предложение в тексте содержит однородные члены?",
+              "options": [
+                "Шоколад появился в Европе только пятьсот лет назад.",
+                "Лишь спустя много лет в него стали добавлять сахар и молоко.",
+                "Так появился привычный нам сладкий шоколад."
+              ],
+              "answer": 1,
+              "explanation": "В предложении «...стали добавлять сахар и молоко» два однородных дополнения: что? — сахар, молоко. Они соединены союзом «и»."
+            }
+          ]
+        },
+        {
+          "id": "v11_school_drill",
+          "datapad": "[lang_matrix.exe] Школьный пакет данных: каждое поле — другой раздел. Не залипай на одной теме.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Где правильно стоит ударение в слове «портфель»?",
+              "options": [
+                "по́ртфель",
+                "портфе́ль",
+                "оба варианта допустимы"
+              ],
+              "answer": 1,
+              "explanation": "Норма: портфе́ль — ударение на «е» (второй слог). «По́ртфель» — речевая ошибка."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Какое слово написано БЕЗ ошибок?",
+              "options": [
+                "карондаш",
+                "карандаш",
+                "карандашь"
+              ],
+              "answer": 1,
+              "explanation": "Правильно: карандаш. Это словарное слово, его нужно запомнить. Мягкий знак на конце после шипящего у существительных мужского рода не пишется."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Подбери АНТОНИМ к слову «начало»:",
+              "options": [
+                "середина",
+                "конец",
+                "продолжение"
+              ],
+              "answer": 1,
+              "explanation": "Антонимы — слова с противоположным значением. Начало ↔ конец."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В слове «дождик» какая морфема «-ик-»?",
+              "options": [
+                "приставка",
+                "суффикс",
+                "окончание"
+              ],
+              "answer": 1,
+              "explanation": "«-ик-» — суффикс с уменьшительно-ласкательным значением (дом → домик, дождь → дождик). Корень «дожд-», окончание нулевое (м. р., и. п.)."
+            },
+            {
+              "id": "Q5",
+              "prompt": "В предложении «Ребята дружно пели звонкую песню» сказуемое:",
+              "options": [
+                "ребята",
+                "пели",
+                "песню"
+              ],
+              "answer": 1,
+              "explanation": "Сказуемое отвечает на вопрос «что делали?» — пели. «Ребята» — подлежащее (кто?). «Песню» — второстепенный член."
+            }
+          ]
+        },
+        {
+          "id": "v12_winter_pack",
+          "datapad": "[lang_matrix.exe] Зимний пакет лексики: снег, лёд, мороз. Прогони через все модули проверки.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "В каком слове все согласные звуки ЗВОНКИЕ?",
+              "options": [
+                "мороз",
+                "ёлка",
+                "зима"
+              ],
+              "answer": 2,
+              "explanation": "В слове «зима» согласные [з] и [м] — оба звонкие. В «мороз» на конце [с] (оглушение). В «ёлка» есть [к] — глухой."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Какое слово ОДНОКОРЕННОЕ к слову «снег»?",
+              "options": [
+                "снести",
+                "снежинка",
+                "снова"
+              ],
+              "answer": 1,
+              "explanation": "Однокоренные слова имеют общий корень. «Снежинка» — корень «-снеж-» (чередование г/ж). «Снести» — корень «-нес-». «Снова» — корень «-нов-»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какая буква пропущена в слове «мор..з»?",
+              "options": [
+                "о",
+                "а",
+                "е"
+              ],
+              "answer": 0,
+              "explanation": "Морóз — словарное слово, проверить нельзя. Пишем «о». Заодно проверяется парный согласный на конце: морозы — морозный → пишем «з»."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Подбери СИНОНИМ к слову «мчаться» в предложении «Сани мчатся с горы»:",
+              "options": [
+                "идти",
+                "нестись",
+                "стоять"
+              ],
+              "answer": 1,
+              "explanation": "Мчаться = нестись, лететь, торопиться. Все они означают быстрое движение."
+            },
+            {
+              "id": "Q5",
+              "prompt": "В предложении «Зимой деревья и кусты покрылись инеем» сколько однородных подлежащих?",
+              "options": [
+                "одно",
+                "два",
+                "три"
+              ],
+              "answer": 1,
+              "explanation": "Кто? — деревья и кусты. Это два однородных подлежащих, соединённых союзом «и». Сказуемое «покрылись» — одно, относится к обоим."
+            }
+          ]
+        },
+        {
+          "id": "v13_sports_drill",
+          "datapad": "[lang_matrix.exe] Спортивный пакет: бег, прыжки, мяч. Каждое слово — другой грамматический класс.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Где правильно стоит ударение в слове «километр»?",
+              "options": [
+                "кило́метр",
+                "киломе́тр",
+                "оба варианта допустимы"
+              ],
+              "answer": 1,
+              "explanation": "Норма: киломе́тр — ударение на «е» (третий слог). «Кило́метр» — распространённая речевая ошибка."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Какой частью речи является слово «быстрый» в словосочетании «быстрый бегун»?",
+              "options": [
+                "существительное",
+                "прилагательное",
+                "наречие"
+              ],
+              "answer": 1,
+              "explanation": "Прилагательное обозначает признак предмета и отвечает на вопрос «какой?» — быстрый бегун. «Бегун» — существительное."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Разбери слово «пробежка» по составу. Где приставка?",
+              "options": [
+                "про-",
+                "по-",
+                "пробеж-"
+              ],
+              "answer": 0,
+              "explanation": "Приставка «про-» (как в «пробежать», «прогулка»). Корень «-беж-» (от «бежать», чередование г/ж), суффикс «-к-», окончание «-а»."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Определи число прилагательного «спортивные» в словосочетании «спортивные команды»:",
+              "options": [
+                "единственное",
+                "множественное",
+                "нельзя определить"
+              ],
+              "answer": 1,
+              "explanation": "Прилагательное согласуется с существительным. «Команды» — мн. ч., значит и «спортивные» — мн. ч."
+            },
+            {
+              "id": "Q5",
+              "prompt": "В предложении «Мальчики играют в футбол на стадионе» подлежащее:",
+              "options": [
+                "мальчики",
+                "играют",
+                "стадионе"
+              ],
+              "answer": 0,
+              "explanation": "Подлежащее — кто? — мальчики. Сказуемое — что делают? — играют. «На стадионе» — второстепенный член (обстоятельство)."
+            }
+          ]
+        },
+        {
+          "id": "v14_food_corp",
+          "datapad": "[lang_matrix.exe] Продуктовая база сбоит: словари молочки, овощей, выпечки. Восстанови нормы.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Где правильно стоит ударение в слове «свёкла»?",
+              "options": [
+                "свё́кла",
+                "свекла́",
+                "оба варианта допустимы"
+              ],
+              "answer": 0,
+              "explanation": "Норма: свё́кла. Буква «ё» всегда ударная, поэтому ударение строго на первом слоге. Произношение «свекла́» — речевая ошибка."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Где правильно стоит ударение в слове «щавель»?",
+              "options": [
+                "ща́вель",
+                "щаве́ль",
+                "оба варианта допустимы"
+              ],
+              "answer": 1,
+              "explanation": "Норма: щаве́ль — ударение на «е» (второй слог). Это слово часто проверяют в орфоэпическом минимуме начальной школы."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какое слово написано БЕЗ ошибок?",
+              "options": [
+                "молако",
+                "молоко",
+                "малоко"
+              ],
+              "answer": 1,
+              "explanation": "Правильно: молоко — словарное слово с двумя безударными «о», их нужно запомнить."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какое слово написано БЕЗ ошибок?",
+              "options": [
+                "капуста",
+                "копуста",
+                "капустта"
+              ],
+              "answer": 0,
+              "explanation": "Правильно: капуста — словарное слово. Буква «а» в первом слоге, одна «т»."
+            },
+            {
+              "id": "Q5",
+              "prompt": "В словосочетании «свежие овощи» прилагательное «свежие» стоит в форме:",
+              "options": [
+                "ед. ч.",
+                "мн. ч.",
+                "нельзя определить"
+              ],
+              "answer": 1,
+              "explanation": "«Овощи» — мн. ч. Прилагательное согласуется с существительным в числе. Окончание -ие — показатель множественного числа."
+            }
+          ]
+        },
+        {
+          "id": "v15_text_zveri",
+          "datapad": "[lang_matrix.exe] Аудиозапись из довоенного зоопарка восстановлена. Прочитай и пройди verify.\n\n«Ёж — небольшой лесной зверёк. У него короткие лапки и острые иголки на спине. Днём ёж спит в норе под старым пнём. А ночью выходит на охоту. Ёж ловит мышей, жуков и улиток. Он не боится даже ядовитых змей! К зиме ёж готовит уютное гнездо из листьев и засыпает до самой весны».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Когда ёж выходит на охоту?",
+              "options": [
+                "днём",
+                "ночью",
+                "только зимой"
+              ],
+              "answer": 1,
+              "explanation": "Прямая цитата: «А ночью выходит на охоту». Днём ёж спит в норе."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Что является основной мыслью текста?",
+              "options": [
+                "ежи опасны для людей",
+                "ёж — интересный лесной зверёк со своими повадками",
+                "змеи едят ежей"
+              ],
+              "answer": 1,
+              "explanation": "Текст рассказывает, как живёт ёж: где спит, что ест, как готовится к зиме. Это описание зверька и его жизни. Об опасности для людей в тексте нет."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Что ёж ест?",
+              "options": [
+                "траву и листья",
+                "мышей, жуков и улиток",
+                "только ягоды"
+              ],
+              "answer": 1,
+              "explanation": "В тексте перечислены однородные дополнения: «Ёж ловит мышей, жуков и улиток»."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Подбери АНТОНИМ к слову «острые» из 2-го предложения:",
+              "options": [
+                "длинные",
+                "тупые",
+                "колючие"
+              ],
+              "answer": 1,
+              "explanation": "Антоним — слово с противоположным значением. Острые ↔ тупые. «Колючие» — близко по смыслу, но не антоним."
+            },
+            {
+              "id": "Q5",
+              "prompt": "В каком падеже стоит слово «змей» в предложении «Он не боится даже ядовитых змей»?",
+              "options": [
+                "именительный",
+                "родительный",
+                "винительный"
+              ],
+              "answer": 1,
+              "explanation": "Не боится (кого? чего?) змей — родительный падеж. После глагола с отрицанием часто используется родительный падеж."
+            }
+          ]
+        },
+        {
+          "id": "v16_punct_syntax",
+          "datapad": "[lang_matrix.exe] Синтаксический парсер сошёл с ума: восклицательные читает как утвердительные. Восстанови типы предложений.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Какое предложение по цели высказывания ПОВЕСТВОВАТЕЛЬНОЕ?",
+              "options": [
+                "Закрой, пожалуйста, окно.",
+                "Над городом тихо падал снег.",
+                "Куда ты собрался?"
+              ],
+              "answer": 1,
+              "explanation": "Повествовательное предложение сообщает о событии или явлении. «Над городом тихо падал снег» — это сообщение, рассказ. «Закрой...» — побудительное (просьба). «Куда...» — вопросительное."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Какое предложение ПОБУДИТЕЛЬНОЕ?",
+              "options": [
+                "Все ребята вышли во двор.",
+                "Наступила ли уже весна?",
+                "Прочитай эту книгу до конца."
+              ],
+              "answer": 2,
+              "explanation": "Побудительное предложение содержит побуждение к действию: просьбу, совет, приказ. «Прочитай...» — побуждение к действию."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Сколько грамматических основ в предложении «Подул ветер, и зашумели деревья»?",
+              "options": [
+                "одна",
+                "две",
+                "три"
+              ],
+              "answer": 1,
+              "explanation": "В предложении две основы: 1) ветер подул, 2) деревья зашумели. Это сложное предложение с союзом «и»."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В предложении «Маленький щенок весело бежал по траве» какое слово является подлежащим?",
+              "options": [
+                "щенок",
+                "бежал",
+                "маленький"
+              ],
+              "answer": 0,
+              "explanation": "Подлежащее — кто? — щенок. «Маленький» — определение к щенку (какой?). «Бежал» — сказуемое (что делал?)."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Найди предложение, соответствующее схеме «○ и ○ ____.» (два однородных подлежащих + сказуемое):",
+              "options": [
+                "Грачи и скворцы прилетели весной.",
+                "Мальчик читал и мечтал о море.",
+                "Я взял книгу и тетрадь."
+              ],
+              "answer": 0,
+              "explanation": "Кружочки «○» — однородные члены. Два кружка перед сказуемым = два однородных подлежащих. «Грачи и скворцы (○ и ○) прилетели (сказуемое)». В других вариантах однородные сказуемые или дополнения."
+            }
+          ]
+        },
+        {
+          "id": "v17_phonetic_lab",
+          "datapad": "[lang_matrix.exe] Фонетическая лаборатория: где буквы, где звуки, где разделительный мягкий знак. Не путай.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "В каком слове букв БОЛЬШЕ, чем звуков?",
+              "options": [
+                "лень",
+                "юла",
+                "ёлка"
+              ],
+              "answer": 0,
+              "explanation": "В слове «лень» 4 буквы [л-е-н-ь], но 3 звука [л'-э-н']. Мягкий знак букву занимает, а звука не даёт. В «юла» и «ёлка» — наоборот: звуков больше."
+            },
+            {
+              "id": "Q2",
+              "prompt": "В каком слове звуков БОЛЬШЕ, чем букв?",
+              "options": [
+                "конь",
+                "яма",
+                "стол"
+              ],
+              "answer": 1,
+              "explanation": "В слове «яма» 3 буквы, но 4 звука: [й'-а-м-а]. Буква «я» в начале слова даёт два звука [й']+[а]. В «конь» 4 буквы / 3 звука (мягкий знак звука не даёт). В «стол» 4 буквы / 4 звука."
+            },
+            {
+              "id": "Q3",
+              "prompt": "В каком слове нужен РАЗДЕЛИТЕЛЬНЫЙ мягкий знак?",
+              "options": [
+                "сем..я",
+                "мален..кий",
+                "коз..ёл"
+              ],
+              "answer": 0,
+              "explanation": "Разделительный мягкий знак пишется в корне или после корня перед буквами е, ё, ю, я, и: семья, друзья, ручьи. В слове «маленький» мягкий знак — показатель мягкости, не разделительный. В «козёл» «ь» вообще не нужен."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какое слово начинается с ГЛАСНОГО звука?",
+              "options": [
+                "юбка",
+                "ёжик",
+                "иней"
+              ],
+              "answer": 2,
+              "explanation": "Слово «иней» начинается со звука [и] — гласного. Буквы «ю», «ё» в начале слова дают сочетание [й']+гласный, то есть звук — согласный [й']."
+            },
+            {
+              "id": "Q5",
+              "prompt": "В каком слове все согласные звуки МЯГКИЕ?",
+              "options": [
+                "тётя",
+                "лиса",
+                "кошка"
+              ],
+              "answer": 0,
+              "explanation": "В «тётя» оба согласных [т'] — мягкие. В «лиса» [л'] мягкий, но [с] твёрдый. В «кошка» [к] и [ш] твёрдые ([ш] всегда твёрдый)."
+            }
+          ]
+        },
+        {
+          "id": "v18_final_exam",
+          "datapad": "[lang_matrix.exe] ФИНАЛЬНЫЙ СРЕЗ. Каждый вопрос — другой раздел. Это формат настоящей контрольной ВПР: ударение, морфо, синтаксис, лексика, текст.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Где правильно стоит ударение в слове «документ»?",
+              "options": [
+                "докуме́нт",
+                "доку́мент",
+                "оба варианта допустимы"
+              ],
+              "answer": 0,
+              "explanation": "Норма: докуме́нт — ударение на «е» (третий слог). Произношение «доку́мент» — грубая речевая ошибка."
+            },
+            {
+              "id": "Q2",
+              "prompt": "В предложении «Маленькая ласточка вьёт гнездо под крышей» слово «вьёт» — это:",
+              "options": [
+                "имя существительное",
+                "глагол",
+                "имя прилагательное"
+              ],
+              "answer": 1,
+              "explanation": "«Вьёт» отвечает на вопрос «что делает?» — это глагол настоящего времени. Начальная форма — «вить»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Разбери слово «загадка» по составу. Где корень?",
+              "options": [
+                "за-",
+                "-гад-",
+                "-загад-"
+              ],
+              "answer": 1,
+              "explanation": "Корень «-гад-» (однокоренные: загадать, угадать, отгадка). «За-» — приставка, «-к-» — суффикс, «-а» — окончание."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какое слово является ФРАЗЕОЛОГИЗМОМ (устойчивым выражением)?",
+              "options": [
+                "сидеть на стуле",
+                "бить баклуши",
+                "идти в школу"
+              ],
+              "answer": 1,
+              "explanation": "Фразеологизм — устойчивое выражение со значением, не равным сумме значений слов. «Бить баклуши» = бездельничать. «Сидеть на стуле» и «идти в школу» — обычные словосочетания в прямом значении."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Какая пара слов является АНТОНИМАМИ?",
+              "options": [
+                "храбрый — смелый",
+                "большой — маленький",
+                "идти — шагать"
+              ],
+              "answer": 1,
+              "explanation": "Антонимы — слова с противоположным значением. Большой ↔ маленький — антонимы. «Храбрый — смелый» и «идти — шагать» — это синонимы."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m_lit",
+      "code": "STORYWEAVER_ARCHIVE",
+      "title": "STORYWEAVER ARCHIVE",
+      "subtitle": "LITERATURE RECOVERY // 5 PTS",
+      "skill": "quiz",
+      "subject": "literature",
+      "themeColor": "purple",
+      "districtTag": "OLD MOSCOW DATABANKS",
+      "maxPoints": 5,
+      "variants": [
+        {
+          "id": "v1_tolstoy_ded",
+          "datapad": "[wakako.call] Choom, recovered fragment из Old Moscow Databanks. Нужен verify — прочти и ответь на вопросы. Eddies капают за каждый правильный.\n\n[archive.dat // L. N. TOLSTOY · 1872 · pre-collapse]\n\n«Стал дед очень стар. Ноги у него не ходили, глаза не видели, уши не слышали, зубов не было. И когда он ел, у него текло назад изо рта. Сын и невестка перестали его за стол сажать, а давали ему обедать за печкой. Снесли ему раз обедать в чашке. Он хотел её подвинуть, да уронил и разбил. Невестка стала бранить старика и сказала, что теперь будет давать ему обедать в лоханке. Старик только вздохнул и ничего не сказал».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Почему деда перестали сажать за общий стол?",
+              "options": [
+                "он сам не хотел сидеть со всеми",
+                "он был старым и неаккуратно ел",
+                "он плохо себя вёл"
+              ],
+              "answer": 1,
+              "explanation": "В тексте сказано, что у деда «текло назад изо рта», потому что не было зубов. Это и стало причиной — невестке и сыну было неприятно."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Что сделал дед, когда невестка ругала его?",
+              "options": [
+                "заплакал",
+                "ушёл из дома",
+                "вздохнул и промолчал"
+              ],
+              "answer": 2,
+              "explanation": "Прямая цитата: «Старик только вздохнул и ничего не сказал»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какие качества показывает поведение деда?",
+              "options": [
+                "злость и обида",
+                "терпение и смирение",
+                "хитрость"
+              ],
+              "answer": 1,
+              "explanation": "Дед не спорит, не злится, не жалуется — он смиренно принимает несправедливость. Это терпение и смирение."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какая пословица подходит к этому тексту?",
+              "options": [
+                "Без труда не вытащишь и рыбку из пруда",
+                "Что посеешь, то и пожнёшь",
+                "Семь раз отмерь — один раз отрежь"
+              ],
+              "answer": 1,
+              "explanation": "Дети, которые так относятся к старому отцу, сами получат такое же отношение от своих детей. «Что посеешь, то и пожнёшь»."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "сказка",
+                "басня",
+                "рассказ"
+              ],
+              "answer": 2,
+              "explanation": "Это короткий прозаический текст о реальной бытовой ситуации, без волшебства и без морали в стихах — рассказ (или быль)."
+            }
+          ]
+        },
+        {
+          "id": "v2_krylov_voz",
+          "datapad": "[wakako.call] Этот fragment в стихах. Тут есть мораль и аллегория — basics для verify. Не торопись.\n\n[archive.dat // I. A. KRYLOV · 1814 · pre-collapse]\n\n«Когда в товарищах согласья нет,\nНа лад их дело не пойдёт,\nИ выйдет из него не дело, только мука.\n\nОднажды Лебедь, Рак да Щука\nВезти с поклажей воз взялись,\nИ вместе трое все в него впряглись;\nИз кожи лезут вон, а возу всё нет ходу!\nПоклажа бы для них казалась и легка:\nДа Лебедь рвётся в облака,\nРак пятится назад, а Щука тянет в воду.\nКто виноват из них, кто прав, — судить не нам;\nДа только воз и ныне там».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Почему герои не смогли сдвинуть воз?",
+              "options": [
+                "воз был слишком тяжёлый",
+                "каждый тянул в свою сторону",
+                "они устали"
+              ],
+              "answer": 1,
+              "explanation": "Лебедь — в облака, Рак — назад, Щука — в воду. Они тянули в три разные стороны."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Какова мораль (главная мысль) произведения?",
+              "options": [
+                "надо работать всем вместе и согласованно",
+                "лучше работать одному",
+                "сильный всегда побеждает"
+              ],
+              "answer": 0,
+              "explanation": "Первые три строки — это и есть мораль: «Когда в товарищах согласья нет, на лад их дело не пойдёт»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Что означает выражение «воз и ныне там»?",
+              "options": [
+                "воз потерялся",
+                "воз сломался",
+                "дело так и не сдвинулось с места"
+              ],
+              "answer": 2,
+              "explanation": "«Ныне» — сейчас. То есть как стояли, так и стоят. Стало крылатым выражением о делах, которые не двигаются."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какой жанр у этого произведения?",
+              "options": [
+                "рассказ",
+                "сказка",
+                "басня"
+              ],
+              "answer": 2,
+              "explanation": "В тексте есть мораль (поучение) и аллегория — звери ведут себя как люди. Это признаки басни."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Какое средство выразительности использует автор, наделяя животных способностью говорить и работать?",
+              "options": [
+                "сравнение",
+                "олицетворение",
+                "эпитет"
+              ],
+              "answer": 1,
+              "explanation": "Олицетворение — это когда животным или неживым предметам приписываются человеческие действия и качества."
+            }
+          ]
+        },
+        {
+          "id": "v3_krylov_strekoza",
+          "datapad": "[wakako.call] Krylov shipped это в 1808. Жанр басни — вкладывает мораль в животных. Найди её.\n\n[archive.dat // I. A. KRYLOV · 1808 · pre-collapse]\n\n«Попрыгунья Стрекоза\nЛето красное пропела;\nОглянуться не успела,\nКак зима катит в глаза.\nПомертвело чисто поле;\nНет уж дней тех светлых боле,\nКак под каждым ей листком\nБыл готов и стол, и дом.\nВсё прошло: с зимой холодной\nНужда, голод настаёт;\nСтрекоза уж не поёт:\nИ кому же в ум пойдёт\nНа желудок петь голодный!»",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Что делала Стрекоза летом?",
+              "options": [
+                "работала в поле",
+                "пела и веселилась",
+                "копила запасы"
+              ],
+              "answer": 1,
+              "explanation": "«Лето красное пропела» — Стрекоза провела всё лето беззаботно."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Что наступило, когда пришла зима?",
+              "options": [
+                "праздник",
+                "нужда и голод",
+                "тепло"
+              ],
+              "answer": 1,
+              "explanation": "«С зимой холодной нужда, голод настаёт»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Почему Стрекоза перестала петь?",
+              "options": [
+                "разучилась",
+                "стала слишком взрослой",
+                "была голодна"
+              ],
+              "answer": 2,
+              "explanation": "«И кому же в ум пойдёт на желудок петь голодный!» — голод не до песен."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какова главная мысль басни?",
+              "options": [
+                "надо отдыхать летом",
+                "надо трудиться, чтобы не голодать потом",
+                "Стрекозы ленивые"
+              ],
+              "answer": 1,
+              "explanation": "Басня учит: пока есть возможность, нужно работать и заботиться о будущем."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "рассказ",
+                "стихотворение",
+                "басня"
+              ],
+              "answer": 2,
+              "explanation": "Это басня: есть мораль, аллегория (Стрекоза-беззаботная и Муравей-трудолюбивый), стихотворная форма."
+            }
+          ]
+        },
+        {
+          "id": "v4_tolstoy_lev",
+          "datapad": "[wakako.call] Tolstoy писал short stories для детей. Этот — про Лондонский зверинец. Verify качества героев.\n\n[archive.dat // L. N. TOLSTOY · 1880 · pre-collapse]\n\n«В Лондоне показывали диких зверей и за смотрение брали деньгами или собаками и кошками на корм диким зверям. Одному человеку захотелось поглядеть зверей: он ухватил на улице собачонку и принёс её в зверинец. Его пустили смотреть, а собачонку взяли и бросили в клетку ко льву на съедение.\n\nСобачка поджала хвост и прижалась в угол клетки. Лев подошёл к ней и понюхал её. Собачка легла на спину, подняла лапки и стала махать хвостиком. Лев тронул её лапой и перевернул. Собачка вскочила и стала перед львом на задние лапки. Лев смотрел на собачку, поворачивал голову со стороны на сторону и не трогал её».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Куда попала собачка?",
+              "options": [
+                "в зоопарк",
+                "в клетку ко льву",
+                "к доброму хозяину"
+              ],
+              "answer": 1,
+              "explanation": "«Бросили в клетку ко льву на съедение»."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Что сделала собачка, когда увидела льва?",
+              "options": [
+                "стала лаять",
+                "поджала хвост и прижалась в угол",
+                "набросилась на льва"
+              ],
+              "answer": 1,
+              "explanation": "«Собачка поджала хвост и прижалась в угол клетки»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Как лев отнёсся к собачке?",
+              "options": [
+                "сразу съел",
+                "не тронул её",
+                "испугался"
+              ],
+              "answer": 1,
+              "explanation": "«Лев смотрел на собачку, поворачивал голову со стороны на сторону и не трогал её»."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какие качества показывает поведение льва?",
+              "options": [
+                "жестокость",
+                "благородство",
+                "трусость"
+              ],
+              "answer": 1,
+              "explanation": "Лев — царь зверей — пощадил слабую собачку. Это благородство и доброта."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "сказка",
+                "стихотворение",
+                "рассказ (быль)"
+              ],
+              "answer": 2,
+              "explanation": "Это рассказ-быль — короткий прозаический текст о реальном случае. Толстой назвал свой рассказ «Лев и собачка»."
+            }
+          ]
+        },
+        {
+          "id": "v5_pushkin_osen",
+          "datapad": "[wakako.call] Поэтический fragment. Pushkin — самый ценный poet pre-collapse эпохи. Узнай образ и краски.\n\n[archive.dat // A. S. PUSHKIN · 1833 · pre-collapse]\n\n«Унылая пора! Очей очарованье!\nПриятна мне твоя прощальная краса —\nЛюблю я пышное природы увяданье,\nВ багрец и в золото одетые леса,\nВ их сенях ветра шум и свежее дыханье,\nИ мглой волнистою покрыты небеса,\nИ редкий солнца луч, и первые морозы,\nИ отдалённые седой зимы угрозы».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "О каком времени года это стихотворение?",
+              "options": [
+                "весна",
+                "лето",
+                "осень"
+              ],
+              "answer": 2,
+              "explanation": "«Природы увяданье», «в багрец и в золото одетые леса», «первые морозы» — всё это признаки осени."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Какие краски использует поэт?",
+              "options": [
+                "белый и голубой",
+                "багрец и золото",
+                "зелёный и синий"
+              ],
+              "answer": 1,
+              "explanation": "Прямая цитата: «В багрец и в золото одетые леса»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Что значит «очей очарованье»?",
+              "options": [
+                "плохое зрение",
+                "то, что радует глаза",
+                "темнота"
+              ],
+              "answer": 1,
+              "explanation": "«Очи» — устар. глаза, «очарованье» — то, что зачаровывает, радует. Осень для поэта — то, что радует глаза."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какое чувство к осени выражает автор?",
+              "options": [
+                "грусть и страх",
+                "любовь и восхищение",
+                "равнодушие"
+              ],
+              "answer": 1,
+              "explanation": "«Приятна мне», «люблю я пышное природы увяданье» — поэт любит осень и восхищается ею, несмотря на её «унылость»."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "рассказ",
+                "басня",
+                "стихотворение"
+              ],
+              "answer": 2,
+              "explanation": "Стихотворение — поэтическая форма, рифмованные строки, ритм."
+            }
+          ]
+        },
+        {
+          "id": "v6_tolstoy_dva",
+          "datapad": "[wakako.call] Final fragment в этом archive. Про дружбу и medvjed'a. Думай о морали.\n\n[archive.dat // L. N. TOLSTOY · 1872 · pre-collapse]\n\n«Шли по лесу два товарища, и выскочил на них медведь. Один бросился бежать, влез на дерево и спрятался, а другой остался на дороге. Делать было ему нечего — он упал наземь и притворился мёртвым.\n\nМедведь подошёл к нему и стал нюхать: он и дышать перестал. Медведь понюхал ему лицо, подумал, что мёртвый, и отошёл. Когда медведь ушёл, тот слез с дерева и смеётся: „Ну что, — говорит, — медведь тебе на ухо говорил?“ — „А он сказал мне, что плохие люди те, которые в опасности от товарищей убегают“».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Что сделал первый товарищ, увидев медведя?",
+              "options": [
+                "упал и притворился мёртвым",
+                "влез на дерево",
+                "стал звать на помощь"
+              ],
+              "answer": 1,
+              "explanation": "«Один бросился бежать, влез на дерево и спрятался»."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Что сделал второй товарищ?",
+              "options": [
+                "залез на дерево",
+                "побежал в другую сторону",
+                "упал и притворился мёртвым"
+              ],
+              "answer": 2,
+              "explanation": "«Он упал наземь и притворился мёртвым»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Что «сказал» медведь на ухо?",
+              "options": [
+                "плохие люди те, кто бросает товарищей в беде",
+                "лес опасен",
+                "медведи добрые"
+              ],
+              "answer": 0,
+              "explanation": "Прямая цитата: «плохие люди те, которые в опасности от товарищей убегают»."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какова главная мысль рассказа?",
+              "options": [
+                "надо уметь лазить по деревьям",
+                "настоящий друг не бросит в беде",
+                "медведи опасны"
+              ],
+              "answer": 1,
+              "explanation": "Рассказ учит, что друзья проверяются в трудных ситуациях. Кто бежит — тот не настоящий друг."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "сказка",
+                "рассказ (быль)",
+                "стихотворение"
+              ],
+              "answer": 1,
+              "explanation": "Это короткий рассказ-быль с поучительным выводом — жанр распространён у Толстого в «Азбуке»."
+            }
+          ]
+        },
+        {
+          "id": "v7_krylov_vorona",
+          "datapad": "[wakako.call] Choom, ещё один fragment из Old Moscow Databanks — басня от того же Крылова, но ранняя. Восстанавливай по reflex'у: где мораль, где образ.\n\n[archive.dat // I. A. KRYLOV · 1807 · pre-collapse]\n\n«Уж сколько раз твердили миру,\nЧто лесть гнусна, вредна; но только всё не впрок,\nИ в сердце льстец всегда отыщет уголок.\n\nВороне где-то Бог послал кусочек сыру;\nНа ель Ворона взгромоздясь,\nПозавтракать-было совсем уж собралась,\nДа призадумалась, а сыр во рту держала.\nНа ту беду Лиса близёхонько бежала;\nВдруг сырный дух Лису остановил:\nЛисица видит сыр, Лисицу сыр пленил».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Что было у Вороны в клюве?",
+              "options": [
+                "кусочек хлеба",
+                "кусочек сыра",
+                "веточка"
+              ],
+              "answer": 1,
+              "explanation": "Прямая цитата: «Вороне где-то Бог послал кусочек сыру». Именно сыр Ворона держала во рту, когда собиралась завтракать."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Что значит выражение «на ель Ворона взгромоздясь»?",
+              "options": [
+                "с трудом, тяжело уселась",
+                "быстро взлетела",
+                "упала с дерева"
+              ],
+              "answer": 0,
+              "explanation": "«Взгромоздиться» — устар. усесться с трудом, неуклюже на что-то высокое. Слово передаёт неловкость и важничанье Вороны."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какова мораль этой басни?",
+              "options": [
+                "надо беречь еду",
+                "лесть вредна и гнусна, но люди ей поддаются",
+                "нельзя сидеть на ели"
+              ],
+              "answer": 1,
+              "explanation": "Первые три строки — это и есть мораль: «Уж сколько раз твердили миру, что лесть гнусна, вредна; но только всё не впрок, и в сердце льстец всегда отыщет уголок»."
+            },
+            {
+              "id": "Q4",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "рассказ",
+                "басня",
+                "сказка"
+              ],
+              "answer": 1,
+              "explanation": "Признаки басни налицо: стихотворная форма, мораль в начале, аллегория (звери ведут себя как люди — Лиса хитрит, Ворона важничает)."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Какое средство выразительности в строке «Лисицу сыр пленил»?",
+              "options": [
+                "сравнение",
+                "олицетворение / метафора (сыр будто бы пленяет)",
+                "эпитет"
+              ],
+              "answer": 1,
+              "explanation": "Сыр — неживой предмет, но автор приписывает ему действие живого («пленил», то есть очаровал, захватил). Это олицетворение и метафора одновременно."
+            }
+          ]
+        },
+        {
+          "id": "v8_krylov_martyshka",
+          "datapad": "[wakako.call] Krylov снова. Этот fragment про gear, который не помог тому, кто не разобрался. Близко к нашей профессии, choom — verify внимательно.\n\n[archive.dat // I. A. KRYLOV · 1815 · pre-collapse]\n\n«Мартышка к старости слаба глазами стала;\nА от людей она слыхала,\nЧто это зло ещё не так большой руки:\nЛишь стоит завести Очки.\nОчков с полдюжины себе она достала;\nВертит Очками так и сяк:\nТо к темю их прижмёт, то их на хвост нанижет,\nТо их понюхает, то их полижет;\nОчки не действуют никак.\n„Тьфу, пропасть! — говорит она, — и тот дурак,\nКто слушает людских всех врак“».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Зачем Мартышка достала очки?",
+              "options": [
+                "чтобы быть модной",
+                "у неё ослабело зрение в старости",
+                "чтобы напугать других зверей"
+              ],
+              "answer": 1,
+              "explanation": "В первой строке прямо сказано: «Мартышка к старости слаба глазами стала». Очки нужны были, чтобы помочь зрению."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Как Мартышка обращалась с очками?",
+              "options": [
+                "надела на нос и стала читать",
+                "прижимала к темени, нанизывала на хвост, нюхала и лизала",
+                "отдала их другим зверям"
+              ],
+              "answer": 1,
+              "explanation": "Прямо в тексте: «То к темю их прижмёт, то их на хвост нанижет, то их понюхает, то их полижет». Она не знала, как ими пользоваться."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какая черта характера показана у Мартышки?",
+              "options": [
+                "трудолюбие",
+                "невежество и упрямство",
+                "доброта"
+              ],
+              "answer": 1,
+              "explanation": "Мартышка не разобралась в простой вещи и сразу обвинила других во лжи. Это невежество (нежелание учиться) и упрямство."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какова главная мысль басни?",
+              "options": [
+                "очки бесполезны для всех",
+                "если не умеешь пользоваться вещью — не вини её и других",
+                "нельзя стареть"
+              ],
+              "answer": 1,
+              "explanation": "Крылов высмеивает тех, кто не разобравшись, отвергает полезные вещи и обвиняет окружающих. Очки помогли бы — но Мартышка не умела ими пользоваться."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "басня",
+                "сказка",
+                "былина"
+              ],
+              "answer": 0,
+              "explanation": "Это басня: стихотворная форма, аллегория (Мартышка — образ невежественного человека), есть скрытая мораль о людях, которые «слушают людских всех врак»."
+            }
+          ]
+        },
+        {
+          "id": "v9_pushkin_zima_vecher",
+          "datapad": "[wakako.call] Поэтический fragment. Pushkin, 1825 — winter в pre-collapse Russia. Узнай образы и сравнения.\n\n[archive.dat // A. S. PUSHKIN · 1825 · pre-collapse]\n\n«Буря мглою небо кроет,\nВихри снежные крутя;\nТо, как зверь, она завоет,\nТо заплачет, как дитя,\nТо по кровле обветшалой\nВдруг соломой зашумит,\nТо, как путник запоздалый,\nК нам в окошко застучит.\n\nНаша ветхая лачужка\nИ печальна и темна.\nЧто же ты, моя старушка,\nПриумолкла у окна?\nИли бури завываньем\nТы, мой друг, утомлена,\nИли дремлешь под жужжаньем\nСвоего веретена?»",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "О каком явлении природы говорится в стихотворении?",
+              "options": [
+                "о тёплом летнем дожде",
+                "о зимней буре, метели",
+                "о весеннем ветре"
+              ],
+              "answer": 1,
+              "explanation": "«Буря мглою небо кроет, вихри снежные крутя» — речь о зимней метели, когда снег и ветер закрывают небо."
+            },
+            {
+              "id": "Q2",
+              "prompt": "С кем (или с чем) сравнивает поэт бурю?",
+              "options": [
+                "со зверем, с дитя, с путником",
+                "с лошадью и санями",
+                "с морем и кораблём"
+              ],
+              "answer": 0,
+              "explanation": "В тексте три сравнения: «как зверь, она завоет», «заплачет, как дитя», «как путник запоздалый, к нам в окошко застучит»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какое средство выразительности использует автор в строках «как зверь, она завоет, то заплачет, как дитя»?",
+              "options": [
+                "эпитет",
+                "сравнение (есть слово «как»)",
+                "гипербола"
+              ],
+              "answer": 1,
+              "explanation": "Сравнение легко узнать по словам «как», «словно», «будто». Здесь буря сравнивается со зверем и с дитя — оба раза через «как»."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Что значит «кровля обветшалая»?",
+              "options": [
+                "новая крыша",
+                "старая, ветхая крыша",
+                "крыша из железа"
+              ],
+              "answer": 1,
+              "explanation": "«Обветшалая» — от слова «ветхий», то есть старая, разрушенная от времени. Кровля — крыша. По такой крыше ветер шумит соломой."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "рассказ",
+                "стихотворение",
+                "басня"
+              ],
+              "answer": 1,
+              "explanation": "Перед нами поэтический текст с рифмой («кроет — завоет», «крутя — дитя») и чётким ритмом. Это стихотворение — отрывок из «Зимнего вечера» Пушкина."
+            }
+          ]
+        },
+        {
+          "id": "v10_lermontov_parus",
+          "datapad": "[wakako.call] Lermontov, 1832. Короткий fragment — но плотный. Каждая строка несёт image. Verify smyslы внимательно.\n\n[archive.dat // M. Y. LERMONTOV · 1832 · pre-collapse]\n\n«Белеет парус одинокой\nВ тумане моря голубом!..\nЧто ищет он в стране далёкой?\nЧто кинул он в краю родном?..\n\nИграют волны — ветер свищет,\nИ мачта гнётся и скрыпит...\nУвы! он счастия не ищет\nИ не от счастия бежит!\n\nПод ним струя светлей лазури,\nНад ним луч солнца золотой...\nА он, мятежный, просит бури,\nКак будто в бурях есть покой!»",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Где находится парус?",
+              "options": [
+                "у берега в гавани",
+                "в тумане моря",
+                "на реке"
+              ],
+              "answer": 1,
+              "explanation": "«Белеет парус одинокой в тумане моря голубом» — парус в открытом море, окутанном туманом."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Каким показан парус в стихотворении?",
+              "options": [
+                "весёлым и беззаботным",
+                "одиноким, мятежным",
+                "большим и сильным"
+              ],
+              "answer": 1,
+              "explanation": "Уже в первой строке — эпитет «одинокой». А дальше образ усиливается: парус не ищет счастья и не бежит от него — это душа мятежная, неприкаянная."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какое слово в стихотворении является эпитетом?",
+              "options": [
+                "парус",
+                "одинокой / голубом",
+                "волны"
+              ],
+              "answer": 1,
+              "explanation": "Эпитет — это красочное определение. «Одинокой» (парус), «голубом» (море) — оба слова дают яркий образ. «Парус» и «волны» — это просто существительные, а не определения."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какое средство выразительности использовано в строке «играют волны — ветер свищет»?",
+              "options": [
+                "сравнение",
+                "олицетворение (волны и ветер действуют как живые)",
+                "гипербола"
+              ],
+              "answer": 1,
+              "explanation": "Волны «играют», ветер «свищет» — неживым явлениям приписаны действия живых существ. Это олицетворение."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "рассказ",
+                "стихотворение",
+                "басня"
+              ],
+              "answer": 1,
+              "explanation": "Рифма («одинокой — далёкой», «голубом — родном»), ритм, краткая поэтическая форма, выражение чувств автора — это всё признаки стихотворения."
+            }
+          ]
+        },
+        {
+          "id": "v11_tutchev_groza",
+          "datapad": "[wakako.call] Tyutchev, 1828. Поэт ловит момент, когда природа просыпается. Найди олицетворения — их тут много.\n\n[archive.dat // F. I. TYUTCHEV · 1828 · pre-collapse]\n\n«Люблю грозу в начале мая,\nКогда весенний, первый гром,\nКак бы резвяся и играя,\nГрохочет в небе голубом.\n\nГремят раскаты молодые,\nВот дождик брызнул, пыль летит,\nПовисли перлы дождевые,\nИ солнце нити золотит.\n\nС горы бежит поток проворный,\nВ лесу не молкнет птичий гам,\nИ гам лесной, и шум нагорный —\nВсё вторит весело громам».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "О каком времени года говорится в стихотворении?",
+              "options": [
+                "о ранней осени",
+                "о начале мая (поздняя весна)",
+                "о зиме"
+              ],
+              "answer": 1,
+              "explanation": "Прямая цитата в первой строке: «Люблю грозу в начале мая». Май — последний месяц весны, поэтому это поздняя весна."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Что такое «перлы дождевые»?",
+              "options": [
+                "молнии",
+                "капли дождя, похожие на жемчужины",
+                "тучи"
+              ],
+              "answer": 1,
+              "explanation": "«Перлы» — устар. жемчуг. Капли дождя, освещённые солнцем, блестят и похожи на жемчуг. Это метафора."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какое средство выразительности в строке «как бы резвяся и играя, грохочет в небе»?",
+              "options": [
+                "сравнение и олицетворение (гром «играет» как ребёнок)",
+                "эпитет",
+                "гипербола"
+              ],
+              "answer": 0,
+              "explanation": "Гром не может «резвиться и играть» — это действия живого существа, ребёнка. Поэт оживляет гром: это олицетворение, усиленное оборотом «как бы» — оттенок сравнения."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какое чувство выражает автор по отношению к грозе?",
+              "options": [
+                "страх",
+                "любовь и восхищение",
+                "равнодушие"
+              ],
+              "answer": 1,
+              "explanation": "Стихотворение начинается со слова «люблю». Поэт радуется грозе: она «молодая», «резвится и играет». Гроза для него — праздник природы, а не угроза."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "басня",
+                "стихотворение (пейзажная лирика)",
+                "рассказ"
+              ],
+              "answer": 1,
+              "explanation": "Это стихотворение: рифма («мая — играя», «голубом — гром»), ритм, описание природы и чувств автора. Такие стихи о природе называют пейзажной лирикой."
+            }
+          ]
+        },
+        {
+          "id": "v12_tolstoy_filipok",
+          "datapad": "[wakako.call] Tolstoy, 1875. Этот fragment — про мальчика, который сам учиться захотел. School без сетки, choom. Verify motiv'ы.\n\n[archive.dat // L. N. TOLSTOY · 1875 · pre-collapse]\n\n«Был мальчик, звали его Филипп. Пошли раз все ребята в школу. Филипп взял шапку и хотел тоже идти. Но мать сказала ему: „Куда ты, Филипок, собрался?“ — „В школу“. — „Ты ещё мал, не ходи“, — и мать оставила его дома. Ребята ушли в школу. Отец ещё с утра уехал в лес, мать ушла на подённую работу. Остались в избе Филипок да бабушка на печке. Стало Филипку скучно одному, бабушка заснула, а он стал искать шапку. Своей не нашёл, взял старую отцовскую и пошёл в школу».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Куда хотел пойти Филипок?",
+              "options": [
+                "в лес с отцом",
+                "в школу с ребятами",
+                "на подённую работу с матерью"
+              ],
+              "answer": 1,
+              "explanation": "«Пошли раз все ребята в школу. Филипп взял шапку и хотел тоже идти». Филипок захотел в школу, как и старшие ребята."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Почему мать не пустила Филипка?",
+              "options": [
+                "он плохо себя вёл",
+                "сказала, что он ещё мал",
+                "школа была закрыта"
+              ],
+              "answer": 1,
+              "explanation": "Прямо в тексте: «Ты ещё мал, не ходи, — и мать оставила его дома»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Чью шапку в итоге надел Филипок?",
+              "options": [
+                "свою",
+                "бабушкину",
+                "старую отцовскую"
+              ],
+              "answer": 2,
+              "explanation": "«Своей не нашёл, взял старую отцовскую и пошёл в школу». Шапка была велика, но Филипок всё равно отправился в путь."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какие качества характера показывает Филипок?",
+              "options": [
+                "лень и упрямство",
+                "решительность и тягу к учёбе",
+                "трусость"
+              ],
+              "answer": 1,
+              "explanation": "Маленький мальчик сам решил пойти учиться, даже без разрешения матери. Это решительность, смелость и сильное желание учиться."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "басня",
+                "сказка",
+                "рассказ-быль"
+              ],
+              "answer": 2,
+              "explanation": "Это короткий прозаический рассказ о реальной деревенской жизни, без волшебства и стихотворной морали. Толстой назвал такие свои тексты «былями» и помещал в «Азбуку»."
+            }
+          ]
+        },
+        {
+          "id": "v13_tolstoy_kotenok",
+          "datapad": "[wakako.call] Tolstoy снова. История про choom'a, который рискнул жизнью ради котёнка. Verify геройский поступок.\n\n[archive.dat // L. N. TOLSTOY · 1875 · pre-collapse]\n\n«Дети пошли играть на дорогу и взяли с собой котёнка. Ветер шевелил солому на дороге, а котёнок играл с соломой, и дети радовались на него. Потом они нашли щавель, пошли собирать его и забыли про котёнка. Вдруг они услыхали, что кто-то громко кричит: „Назад, назад!“ — и увидали, что скачет охотник, а впереди его две собаки увидали котёнка и хотят схватить его. А котёнок, глупый, вместо того чтобы бежать, присел к земле и смотрит на собак. Вася упал животом на котёнка и закрыл его собой от собак».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Что делал котёнок на дороге, пока дети не отвлеклись?",
+              "options": [
+                "ловил мышей",
+                "играл с соломой",
+                "спал"
+              ],
+              "answer": 1,
+              "explanation": "«Котёнок играл с соломой, и дети радовались на него». Ветер шевелил солому, а котёнок её ловил."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Почему дети забыли про котёнка?",
+              "options": [
+                "устали и ушли домой",
+                "пошли собирать щавель",
+                "испугались собак"
+              ],
+              "answer": 1,
+              "explanation": "Прямо в тексте: «Они нашли щавель, пошли собирать его и забыли про котёнка»."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Что сделал Вася, когда увидел собак?",
+              "options": [
+                "убежал",
+                "упал животом на котёнка и закрыл его собой",
+                "позвал охотника"
+              ],
+              "answer": 1,
+              "explanation": "Последнее предложение: «Вася упал животом на котёнка и закрыл его собой от собак». Он рискнул собой, чтобы спасти котёнка."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какие качества характера показал Вася?",
+              "options": [
+                "трусость и эгоизм",
+                "храбрость и доброту",
+                "хитрость"
+              ],
+              "answer": 1,
+              "explanation": "Вася не убежал, не растерялся — он защитил беззащитного котёнка собой. Это смелость и сострадание к слабому."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Какова главная мысль рассказа?",
+              "options": [
+                "нельзя гулять с домашними животными",
+                "настоящая доброта — защитить слабого, даже рискуя собой",
+                "охотники всегда плохие"
+              ],
+              "answer": 1,
+              "explanation": "Толстой показывает: кто берёт ответственность за животное — должен его защищать. Поступок Васи — пример настоящей доброты и смелости."
+            }
+          ]
+        },
+        {
+          "id": "v14_pushkin_rybak",
+          "datapad": "[wakako.call] Last fragment в архиве. Pushkin, 1833 — fairy tale в стихах. Verify зачин и magic элемент.\n\n[archive.dat // A. S. PUSHKIN · 1833 · pre-collapse]\n\n«Жил старик со своею старухой\nУ самого синего моря;\nОни жили в ветхой землянке\nРовно тридцать лет и три года.\nСтарик ловил неводом рыбу,\nСтаруха пряла свою пряжу.\nРаз он в море закинул невод, —\nПришёл невод с одною тиной.\nОн в другой раз закинул невод, —\nПришёл невод с травой морскою.\nВ третий раз закинул он невод, —\nПришёл невод с одною рыбкой,\nС непростою рыбкой, — золотою».",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Сколько лет старик и старуха жили у синего моря?",
+              "options": [
+                "сто лет",
+                "тридцать лет и три года",
+                "десять лет"
+              ],
+              "answer": 1,
+              "explanation": "Прямая цитата: «Они жили в ветхой землянке ровно тридцать лет и три года». Числа 30 и 3 — традиционные сказочные числа."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Что было в неводе, когда старик закинул его в третий раз?",
+              "options": [
+                "трава морская",
+                "тина и водоросли",
+                "золотая рыбка"
+              ],
+              "answer": 2,
+              "explanation": "В первый раз — тина, во второй — трава морская, в третий — «непростая рыбка, золотая». Это сказочное число «три» и волшебный финал."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Что означает слово «ветхая» (землянка)?",
+              "options": [
+                "новая и красивая",
+                "старая, разрушенная от времени",
+                "большая и просторная"
+              ],
+              "answer": 1,
+              "explanation": "«Ветхая» — старая, обветшалая, готовая развалиться. Это говорит о бедной жизни стариков."
+            },
+            {
+              "id": "Q4",
+              "prompt": "По каким признакам ты узнаёшь, что это сказка?",
+              "options": [
+                "есть мораль и аллегория, как в басне",
+                "есть зачин («жил старик со своею старухой»), волшебство (золотая рыбка), число три (трижды закидывал невод)",
+                "это рассказ о реальной жизни без волшебства"
+              ],
+              "answer": 1,
+              "explanation": "Все три признака сказки на месте: сказочный зачин, троекратное повторение действия и волшебный персонаж — золотая рыбка."
+            },
+            {
+              "id": "Q5",
+              "prompt": "К какому жанру относится произведение?",
+              "options": [
+                "литературная (авторская) сказка в стихах",
+                "басня",
+                "рассказ-быль"
+              ],
+              "answer": 0,
+              "explanation": "Это сказка («Сказка о рыбаке и рыбке») с автором — А. С. Пушкиным, написанная в стихах. Такие произведения называют литературными (авторскими) сказками, в отличие от народных."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m_cp_history",
+      "code": "WAKAKO_LORE_TEST",
+      "title": "WAKAKO LORE-TEST",
+      "subtitle": "CYBERPUNK 2077 HISTORY // 5 PTS",
+      "skill": "quiz",
+      "subject": "cyberpunk_history",
+      "themeColor": "magenta",
+      "districtTag": "WESTBROOK · WAKAKO-NET",
+      "maxPoints": 5,
+      "variants": [
+        {
+          "id": "v1_heroes",
+          "datapad": "[arasaka_lore_archive // entry 001] Wakako на связи, choomba. Сегодня verify базу: главные лица Night City. Без знания людей — наёмник мёртв в первой же миссии.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Кто главный герой Cyberpunk 2077, за которого играет игрок?",
+              "options": [
+                "Adam Smasher",
+                "V (Ви)",
+                "Jackie Welles"
+              ],
+              "answer": 1,
+              "explanation": "V — наёмник из Night City, главный герой. Игрок выбирает мужской или женский голос и предысторию (кочевник, дитя улиц, корпорат)."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Кто такой Johnny Silverhand?",
+              "options": [
+                "Рокер-террорист, чьё сознание живёт в голове V",
+                "Босс корпорации Arasaka",
+                "Полицейский Night City"
+              ],
+              "answer": 0,
+              "explanation": "Johnny Silverhand — фронтмен группы SAMURAI. Его роль играет Киану Ривз. Через Relic-чип его личность оказывается в голове V."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Кто лучший друг V в начале игры?",
+              "options": [
+                "Jackie Welles",
+                "River Ward",
+                "Goro Takemura"
+              ],
+              "answer": 0,
+              "explanation": "Jackie Welles — напарник V в первых миссиях. Вместе они идут на ограбление Konpeki Plaza, с которого начинается основной сюжет."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Panam Palmer принадлежит к какой группе?",
+              "options": [
+                "Корпорация Militech",
+                "Кочевники Aldecaldos",
+                "Банда Maelstrom"
+              ],
+              "answer": 1,
+              "explanation": "Panam Palmer — кочевница из клана Aldecaldos. Она живёт в Бэдлэндс и водит свой Thorton Mackinaw."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Кто такая Hanako Arasaka?",
+              "options": [
+                "Дочь Сабуро Арасаки",
+                "Подруга V из Pacifica",
+                "Капитан Trauma Team"
+              ],
+              "answer": 0,
+              "explanation": "Hanako Arasaka — дочь главы корпорации Saburo Arasaka. В одной из концовок V обращается к ней за помощью с Relic-чипом."
+            }
+          ]
+        },
+        {
+          "id": "v2_districts",
+          "datapad": "[ncpd_district_map // open] Слушай, choomba: в Night City шесть районов плюс Бэдлэндс снаружи. Перепутаешь — окажешься не на той улице, не у того фиксера, под не тем дроном-сканером.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "В каком районе Night City находится квартира V в начале игры?",
+              "options": [
+                "Watson (Megabuilding H10)",
+                "Pacifica",
+                "City Center"
+              ],
+              "answer": 0,
+              "explanation": "V живёт в Megabuilding H10, район Watson, подрайон Little China. Это стартовая локация для всех предысторий."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Какой район Night City заброшен и контролируется бандой Voodoo Boys?",
+              "options": [
+                "Westbrook",
+                "Pacifica",
+                "Heywood"
+              ],
+              "answer": 1,
+              "explanation": "Pacifica — недостроенный курортный район, который превратился в трущобы. Voodoo Boys (гаитянские нетраннеры) держат там власть."
+            },
+            {
+              "id": "Q3",
+              "prompt": "В каком районе расположены небоскрёбы корпораций и башня Arasaka?",
+              "options": [
+                "Santo Domingo",
+                "City Center",
+                "Watson"
+              ],
+              "answer": 1,
+              "explanation": "City Center — деловой центр Night City, там стоит Arasaka Tower и большинство корпоративных штаб-квартир."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Где находится Japantown — район с азиатскими неонами и Tyger Claws?",
+              "options": [
+                "Westbrook",
+                "Heywood",
+                "Pacifica"
+              ],
+              "answer": 0,
+              "explanation": "Japantown — подрайон Westbrook, где доминирует японская якудза-банда Tyger Claws."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Что такое Бэдлэндс (Badlands)?",
+              "options": [
+                "Промзона внутри города",
+                "Пустыни вокруг Night City, где живут кочевники",
+                "Подземные тоннели метро"
+              ],
+              "answer": 1,
+              "explanation": "Badlands — выжженные пустыни вокруг Night City. Там кочуют Aldecaldos, Wraiths и другие номадские кланы."
+            }
+          ]
+        },
+        {
+          "id": "v3_corps",
+          "datapad": "[corpo_intel_brief] V, в Night City корпорации сильнее государств. Знай врага в лицо — иначе ICE-патруль превратит тебя в meat в подворотне.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Какая корпорация считается главным антагонистом основного сюжета?",
+              "options": [
+                "Militech",
+                "Arasaka",
+                "Biotechnica"
+              ],
+              "answer": 1,
+              "explanation": "Arasaka — японская мегакорпорация во главе с Saburo Arasaka. С неё крадут Relic-чип в начале игры."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Кто такие Trauma Team?",
+              "options": [
+                "Платная медицинская служба с боевыми вертолётами",
+                "Банда мародёров",
+                "Спецназ NCPD"
+              ],
+              "answer": 0,
+              "explanation": "Trauma Team — частная медицина по подписке. По вызову прилетает AV-вертолёт со спецназом, чтобы спасти клиента."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Главный военный конкурент Arasaka в Cyberpunk 2077 — это…",
+              "options": [
+                "Petrochem",
+                "Militech",
+                "Kang Tao"
+              ],
+              "answer": 1,
+              "explanation": "Militech — американская военная корпорация. Между Militech и Arasaka шла Корпоративная война."
+            },
+            {
+              "id": "Q4",
+              "prompt": "NCPD — это…",
+              "options": [
+                "Полиция Night City",
+                "Корпорация по производству еды",
+                "Частная армия"
+              ],
+              "answer": 0,
+              "explanation": "NCPD = Night City Police Department. Они отвечают на сигналы о преступлениях и охотятся на киберпсихов."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Kang Tao специализируется на чём?",
+              "options": [
+                "Smart-оружие, отслеживающее цель",
+                "Машины класса люкс",
+                "Braindance-контент"
+              ],
+              "answer": 0,
+              "explanation": "Kang Tao — китайская корпорация, лидер по smart guns: пули таких пушек сами наводятся на врага через имплант."
+            }
+          ]
+        },
+        {
+          "id": "v4_companions",
+          "datapad": "[personal_log // V] Romance в Night City — не игрушки. Один правильный choom может вытащить из любого дерьма. Verify, кого ты выбираешь, прежде чем jack in.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "С каким компаньоном V плавает в затопленном городе Лагуна-Бенд?",
+              "options": [
+                "Panam Palmer",
+                "Judy Alvarez",
+                "Misty Olszewski"
+              ],
+              "answer": 1,
+              "explanation": "Judy Alvarez приглашает V в затопленный городок Laguna Bend в её квестовой линии — одна из самых эмоциональных сцен игры."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Чем по профессии занимается Judy Alvarez?",
+              "options": [
+                "Braindance-техник",
+                "Снайпер кочевников",
+                "Рипперок"
+              ],
+              "answer": 0,
+              "explanation": "Judy — braindance-редактор клуба Clouds. Она монтирует и анализирует записи чужих воспоминаний."
+            },
+            {
+              "id": "Q3",
+              "prompt": "River Ward — это кто?",
+              "options": [
+                "Детектив NCPD",
+                "Фиксер из Heywood",
+                "Ripperdoc"
+              ],
+              "answer": 0,
+              "explanation": "River Ward — детектив полиции Night City. Его линия квестов связана с расследованием похищения детей."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Kerry Eurodyne — это…",
+              "options": [
+                "Старый друг и гитарист SAMURAI вместе с Johnny",
+                "Босс банды Animals",
+                "Владелец клуба Afterlife"
+              ],
+              "answer": 0,
+              "explanation": "Kerry Eurodyne — рок-звезда, бывший гитарист SAMURAI и друг Johnny Silverhand. Возможен романс с мужским V."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Panam водит знаменитый автомобиль кочевников. Какой?",
+              "options": [
+                "Quadra Turbo-R",
+                "Thorton Mackinaw 'Тортон'",
+                "Caliburn"
+              ],
+              "answer": 1,
+              "explanation": "Panam ездит на Thorton Mackinaw — большом пустынном пикапе. Aldecaldos чинят и тюнингуют такие машины."
+            }
+          ]
+        },
+        {
+          "id": "v5_tech_slang",
+          "datapad": "[street_slang_decoder // by Viktor Vector] Eddies, choom, ICE — в Night City говорят на своём языке. Не понимаешь сленг — palevo, ты турист.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Что такое braindance (брэйнданс)?",
+              "options": [
+                "Запись чужих ощущений, которую можно проиграть в своей голове",
+                "Танцевальный клуб",
+                "Вид компьютерного вируса"
+              ],
+              "answer": 0,
+              "explanation": "Braindance — технология записи ощущений и эмоций человека. Можно пережить чужой опыт от первого лица."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Кто такой ripperdoc?",
+              "options": [
+                "Хакер сети",
+                "Доктор, который вживляет киберимпланты",
+                "Бандит-мародёр"
+              ],
+              "answer": 1,
+              "explanation": "Ripperdoc — уличный хирург, ставит cyberware. Викто́р Вектор — рипперок V в Watson."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Что значит слово 'eddies' в Night City?",
+              "options": [
+                "Деньги, евродоллары",
+                "Друзья",
+                "Импланты"
+              ],
+              "answer": 0,
+              "explanation": "Eddies (eurodollars, евродоллары) — основная валюта Night City. 'Сколько eddies стоит?' = 'сколько денег?'."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Netrunner — это…",
+              "options": [
+                "Курьер на мотоцикле",
+                "Хакер, который взламывает сети через нейроинтерфейс",
+                "Уличный музыкант"
+              ],
+              "answer": 1,
+              "explanation": "Netrunner — хакер, который ныряет в сеть через имплант в голове. Через quickhacks может взламывать врагов и камеры."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Fixer — кто это?",
+              "options": [
+                "Механик машин",
+                "Посредник, который выдаёт наёмникам работу",
+                "Танцор в Clouds"
+              ],
+              "answer": 1,
+              "explanation": "Fixer — посредник между клиентами и наёмниками. Wakako Okada, Dexter DeShawn, Rogue — известные фиксеры Night City."
+            }
+          ]
+        },
+        {
+          "id": "v6_enemies",
+          "datapad": "[gang_threat_assessment // NCPD leak] Каждая банда — свой стиль. Maelstrom режут себе лицо, Animals качают мышцы, Voodoo Boys лезут в Net. Выбирай врага с умом.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Кто такой Adam Smasher?",
+              "options": [
+                "Киборг-убийца, элитный боец Arasaka",
+                "Нетраннер Voodoo Boys",
+                "Лидер кочевников"
+              ],
+              "answer": 0,
+              "explanation": "Adam Smasher — почти полностью механизированный боргированный солдат на службе Arasaka. Главный антагонист всего франчайза."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Yorinobu Arasaka — это кто?",
+              "options": [
+                "Сын Сабуро Арасаки, который убивает отца",
+                "Глава Militech",
+                "Лидер Tyger Claws"
+              ],
+              "answer": 0,
+              "explanation": "Yorinobu Arasaka убивает отца Saburo на Konpeki Plaza, после чего захватывает корпорацию. С него V крадёт Relic-чип."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Какая банда известна тем, что вживляет себе максимум железа и режет лица?",
+              "options": [
+                "Maelstrom",
+                "Tyger Claws",
+                "Aldecaldos"
+              ],
+              "answer": 0,
+              "explanation": "Maelstrom — банда киберпсихов из Watson. Они одержимы имплантами и часто доводят себя до киберпсихоза."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Voodoo Boys специализируются на…",
+              "options": [
+                "Угоне машин",
+                "Хакинге и работе в Net",
+                "Торговле едой"
+              ],
+              "answer": 1,
+              "explanation": "Voodoo Boys — банда нетраннеров из Pacifica. Они умеют нырять глубже остальных в Old Net."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Animals — это банда, которая…",
+              "options": [
+                "Делает упор на мускулы и стероиды, не любит импланты",
+                "Состоит из детей-сирот",
+                "Контролирует Pacifica"
+              ],
+              "answer": 0,
+              "explanation": "Animals — качки на стероидах Juice. Они принципиально мало используют киберимпланты, делая ставку на голую силу."
+            }
+          ]
+        },
+        {
+          "id": "v7_main_storyline",
+          "datapad": "[delamain_archive_080] V, главный сюжет — это история одного чипа и одного голоса в твоей голове. Verify, ты помнишь, как всё началось.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Где V и Jackie проводят ограбление, с которого начинается основной сюжет?",
+              "options": [
+                "Arasaka Tower",
+                "Konpeki Plaza",
+                "Casino в Dogtown"
+              ],
+              "answer": 1,
+              "explanation": "Heist на Konpeki Plaza — отель Arasaka. V и Jackie крадут Relic-чип из сейфа Yorinobu."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Что такое Relic?",
+              "options": [
+                "Биочип, способный сохранить личность человека после смерти",
+                "Древний артефакт",
+                "Тип импланта-щита"
+              ],
+              "answer": 0,
+              "explanation": "Relic — экспериментальная разработка Arasaka. На чипе записана личность Johnny Silverhand, и она перезаписывает мозг V."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Mikoshi — это…",
+              "options": [
+                "Виртуальное хранилище оцифрованных душ Arasaka",
+                "Меч Goro Takemura",
+                "Оружейный завод"
+              ],
+              "answer": 0,
+              "explanation": "Mikoshi — секретная серверная Arasaka, где хранятся оцифрованные сознания (engrams) корпоративной верхушки."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Кто такой Goro Takemura?",
+              "options": [
+                "Бывший телохранитель Сабуро Арасаки",
+                "Брат Yorinobu",
+                "Глава полиции Night City"
+              ],
+              "answer": 0,
+              "explanation": "Goro Takemura — самурай и личный телохранитель Saburo. После смерти хозяина он помогает V вычислить настоящего убийцу."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Сколько концовок есть у основного сюжета Cyberpunk 2077 (без DLC)?",
+              "options": [
+                "Только одна",
+                "Несколько разных концовок в зависимости от выбора",
+                "Игра не имеет концовки"
+              ],
+              "answer": 1,
+              "explanation": "У игры несколько концовок — какая именно тебе достанется, зависит от твоих решений и того, кому ты доверишь финальный заход. Спойлерить не будем."
+            }
+          ]
+        },
+        {
+          "id": "v8_edgerunners",
+          "datapad": "[edgerunners_vhs_rip] Slowmo, choom. Это про David'а — пацана, который пытался стать легендой. История кончается плохо, но красиво.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Кто главный герой аниме Cyberpunk: Edgerunners?",
+              "options": [
+                "David Martinez",
+                "Adam Smasher",
+                "Goro Takemura"
+              ],
+              "answer": 0,
+              "explanation": "David Martinez — школьник из Night City, который после смерти матери становится edgerunner-ом и наставляет на себя Sandevistan."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Lucy в Edgerunners — это…",
+              "options": [
+                "Нетраннерша, в которую влюбляется David",
+                "Полицейский детектив",
+                "Сестра David'а"
+              ],
+              "answer": 0,
+              "explanation": "Lucy — нетраннерша с уникальным прошлым (бывшая Arasaka netrunner). Её мечта — увидеть Луну."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Maine — это кто в команде edgerunners?",
+              "options": [
+                "Лидер банды наёмников, который берёт David'а под крыло",
+                "Рипперок",
+                "Фиксер"
+              ],
+              "answer": 0,
+              "explanation": "Maine — старший edgerunner и лидер команды. Из-за избытка хрома он становится киберпсихом."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Какой имплант делает David'а особенным?",
+              "options": [
+                "Mantis Blades",
+                "Sandevistan военной модели Arasaka",
+                "Smart link"
+              ],
+              "answer": 1,
+              "explanation": "David ставит себе мощный военный Sandevistan — имплант, замедляющий время вокруг владельца."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Кто становится финальным боссом для David'а в Edgerunners?",
+              "options": [
+                "Adam Smasher",
+                "Yorinobu Arasaka",
+                "Placide"
+              ],
+              "answer": 0,
+              "explanation": "Adam Smasher по приказу Arasaka охотится на David'а. Финальный бой происходит в Arasaka Tower."
+            }
+          ]
+        },
+        {
+          "id": "v9_phantom_liberty",
+          "datapad": "[fia_classified // Reed channel] Спайтаж, политика, президент в beat-up самолёте. Welcome to Dogtown, choom. Phantom Liberty — это шпионский триллер в кибербудущем.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "В каком новом районе разворачиваются события Phantom Liberty?",
+              "options": [
+                "Dogtown (Догтаун)",
+                "Pacifica",
+                "Бэдлэндс"
+              ],
+              "answer": 0,
+              "explanation": "Dogtown — закрытый огороженный район внутри Pacifica, под контролем Кёрта Хансена и его Barghest."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Кто такая Songbird (So Mi)?",
+              "options": [
+                "Нетраннерша на службе у президента NUSA",
+                "Журналистка Night City",
+                "Лидер банды Voodoo Boys"
+              ],
+              "answer": 0,
+              "explanation": "Songbird (So Mi) — мощнейшая нетраннерша FIA, работает на президента Майерс. Ради спасения от Black Wall пытается дотянуться до Arasaka."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Solomon Reed в Phantom Liberty — это…",
+              "options": [
+                "Бывший агент FIA, спящая клетка в Dogtown",
+                "Президент NUSA",
+                "Босс банды Animals"
+              ],
+              "answer": 0,
+              "explanation": "Solomon Reed — старый агент FIA, которого активирует президент Майерс. Его роль играет Идрис Эльба."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Кто президент NUSA в Phantom Liberty?",
+              "options": [
+                "Розалинд Майерс (Rosalind Myers)",
+                "Hanako Arasaka",
+                "Эвелин Паркер"
+              ],
+              "answer": 0,
+              "explanation": "Rosalind Myers — президент Новых Соединённых Штатов Америки. Её Космический челнок Space Force One сбивают над Dogtown."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Кёрт Хансен (Kurt Hansen) — это…",
+              "options": [
+                "Беглый военный, фактический хозяин Dogtown",
+                "Музыкант SAMURAI",
+                "Шеф NCPD"
+              ],
+              "answer": 0,
+              "explanation": "Kurt Hansen — бывший полковник Militech, командир банды Barghest и неофициальный правитель Dogtown."
+            }
+          ]
+        },
+        {
+          "id": "v10_vehicles_gear",
+          "datapad": "[ride_and_gear_catalog] V, в Night City тачка и кибер-апгрейды — это статус. Знай свои инструменты.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Какая машина в Cyberpunk 2077 — личная тачка Джонни Сильверхэнда?",
+              "options": [
+                "Porsche 911 Turbo (930)",
+                "Caliburn",
+                "Thorton Galena"
+              ],
+              "answer": 0,
+              "explanation": "У Джонни — Porsche 911 Turbo (930) 1977 года, единственный реальный автомобиль в игре. V находит её в гараже Грейс Рэндалл."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Mantis Blades — это…",
+              "options": [
+                "Лезвия, которые выдвигаются из предплечий",
+                "Тип пистолета",
+                "Имплант для глаз"
+              ],
+              "answer": 0,
+              "explanation": "Mantis Blades — холодное оружие-имплант. Адам Смэшер и многие наёмники используют их в ближнем бою."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Smart guns стреляют как?",
+              "options": [
+                "Пули сами наводятся на цель через имплант",
+                "Только одиночными выстрелами",
+                "Стреляют электричеством"
+              ],
+              "answer": 0,
+              "explanation": "Smart guns связаны с имплантом Smart Link в руке владельца. Пули корректируют траекторию и попадают в цель за углом."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Tech-оружие умеет…",
+              "options": [
+                "Стрелять сквозь стены, заряжая выстрел",
+                "Только глушить врагов",
+                "Превращаться в меч"
+              ],
+              "answer": 0,
+              "explanation": "Tech weapons заряжаются перед выстрелом и пробивают укрытия. Любимое оружие снайперов и хакеров."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Caliburn — это…",
+              "options": [
+                "Самая быстрая суперкар в игре",
+                "Имя меча Takemura",
+                "Модель мотоцикла кочевников"
+              ],
+              "answer": 0,
+              "explanation": "Rayfield Caliburn — гиперкар, одна из самых быстрых машин в Night City. Можно найти бесплатный экземпляр в Бэдлэндс."
+            }
+          ]
+        },
+        {
+          "id": "v11_music",
+          "datapad": "[radio_NC // turn it up] Night City без музыки — мёртвый город. SAMURAI, Kerry, Lizzy Wizzy — verify, кто за каким микрофоном.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Как называется группа Johnny Silverhand?",
+              "options": [
+                "SAMURAI",
+                "Us Cracks",
+                "Maelstrom"
+              ],
+              "answer": 0,
+              "explanation": "SAMURAI — рок-группа Johnny. В реальности песни SAMURAI исполняет польская группа Refused."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Какую известную песню SAMURAI Johnny играет в воспоминаниях V?",
+              "options": [
+                "Chippin' In",
+                "Bohemian Rhapsody",
+                "Africa"
+              ],
+              "answer": 0,
+              "explanation": "Chippin' In и Never Fade Away — главные хиты SAMURAI. Their concert in 2013 памятный для всей субкультуры."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Lizzy Wizzy — это…",
+              "options": [
+                "Поп-звезда с полностью кибернетическим телом",
+                "Подруга Panam",
+                "Журналистка"
+              ],
+              "answer": 0,
+              "explanation": "Lizzy Wizzy — поп-икона Night City. Её играет певица Граймс. По сюжету её тело полностью заменено хромом."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Kerry Eurodyne раньше играл в группе…",
+              "options": [
+                "SAMURAI вместе с Johnny",
+                "Us Cracks",
+                "The Bakkers"
+              ],
+              "answer": 0,
+              "explanation": "Kerry был гитаристом SAMURAI. После смерти Johnny он стал сольной звездой и работал на Arasaka."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Us Cracks — что это?",
+              "options": [
+                "Поп-группа из трёх айдолов в стиле J-pop",
+                "Банда из Pacifica",
+                "Команда edgerunners"
+              ],
+              "answer": 0,
+              "explanation": "Us Cracks — виртуальная поп-группа Night City. Их треки крутят на радио, особенно в Westbrook."
+            }
+          ]
+        },
+        {
+          "id": "v12_lore_history",
+          "datapad": "[old_net_archive // pre-DataKrash] Choomba, прежде чем хакать сеть — узнай, как она вообще сломалась. Лор Night City — это история разрушенного будущего.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Что произошло с Night City в 2023 году?",
+              "options": [
+                "Johnny Silverhand взорвал ядерную бомбу в Arasaka Tower",
+                "Землетрясение",
+                "Эпидемия"
+              ],
+              "answer": 0,
+              "explanation": "В 2023 году Johnny Silverhand устроил атаку на Arasaka Tower с малой ядерной боеголовкой. Это событие — Time of the Red."
+            },
+            {
+              "id": "Q2",
+              "prompt": "DataKrash — это…",
+              "options": [
+                "Катастрофа, разрушившая старый интернет",
+                "Имя бога Voodoo Boys",
+                "Альбом SAMURAI"
+              ],
+              "answer": 0,
+              "explanation": "DataKrash — вирус нетраннера Rache Bartmoss. Он сломал старый интернет и заполнил его смертоносными ИИ."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Что такое Old Net?",
+              "options": [
+                "Останки старого интернета за Чёрной стеной, полные опасных ИИ",
+                "Сеть Arasaka",
+                "Игра в виртуальной реальности"
+              ],
+              "answer": 0,
+              "explanation": "Old Net — заражённый старый интернет, отгороженный Blackwall. Туда могут нырять только сильнейшие нетраннеры вроде Voodoo Boys."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Soulkiller — это что?",
+              "options": [
+                "Программа, которая копирует сознание человека и убивает оригинал",
+                "Тип меча",
+                "Группа киллеров"
+              ],
+              "answer": 0,
+              "explanation": "Soulkiller — программа Альт Каннингэм. Она оцифровывает сознание, разрушая мозг. Именно она используется на Johnny."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Что такое Корпоративная война (Corporate War)?",
+              "options": [
+                "Война между Arasaka и Militech в конце 20 — начале 21 века",
+                "Спортивный турнир",
+                "Война банд за район"
+              ],
+              "answer": 0,
+              "explanation": "Серия конфликтов между корпорациями Arasaka и Militech. Кульминация — атака Johnny на Arasaka Tower в 2023."
+            }
+          ]
+        },
+        {
+          "id": "v13_minor_quests",
+          "datapad": "[delamain_AI // courtesy ride] Choom, мир Night City — это не только основа. Side quests, easter eggs, странные NPC. Verify, ты замечал детали.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Delamain — это…",
+              "options": [
+                "Компания такси с ИИ-водителями",
+                "Банда из Heywood",
+                "Бренд еды"
+              ],
+              "answer": 0,
+              "explanation": "Delamain — служба роскошных такси. Все машины управляются ИИ Delamain, у которого случается раздвоение личности."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Misty Olszewski владеет в Night City чем?",
+              "options": [
+                "Эзотерической лавкой с картами Таро",
+                "Клубом Clouds",
+                "Автомастерской"
+              ],
+              "answer": 0,
+              "explanation": "Misty — девушка Jackie Welles. Она держит лавку 'Misty's Esoterica' и гадает V на Таро по ходу игры."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Skippy — это…",
+              "options": [
+                "Говорящий умный пистолет с характером",
+                "Пёс Panam",
+                "Автомобиль"
+              ],
+              "answer": 0,
+              "explanation": "Skippy — уникальный smart gun, который болтает с владельцем. Его можно найти в переулке Heywood."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Кто такие киберпсихи (cyberpsychos), на которых охотится V для NCPD?",
+              "options": [
+                "Люди, у которых от перебора имплантов сорвало крышу",
+                "Банда подростков",
+                "Особый отряд полиции"
+              ],
+              "answer": 0,
+              "explanation": "Киберпсихоз — болезнь, когда количество имплантов разрушает психику. NCPD платит за усмирение таких людей."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Кто помогает V атаковать конвой Militech и захватить инженера Hellman в бэдлэндс?",
+              "options": [
+                "Panam Palmer и кочевники Aldecaldos",
+                "Voodoo Boys",
+                "Tyger Claws"
+              ],
+              "answer": 0,
+              "explanation": "Hellman — инженер Militech, которого Takemura просит похитить. V собирает атаку вместе с Panam и кланом Aldecaldos."
+            }
+          ]
+        },
+        {
+          "id": "v14_bosses",
+          "datapad": "[boss_fight_archive // Afterlife memorial wall] V, в Night City каждый серьёзный бой — это шанс попасть на стену в Afterlife. Verify, кого ты знаешь в лицо.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Кто финальный босс в основном сюжете Cyberpunk 2077?",
+              "options": [
+                "Adam Smasher",
+                "Yorinobu Arasaka",
+                "Saburo Arasaka"
+              ],
+              "answer": 0,
+              "explanation": "Финальный бой во всех концовках основного сюжета — против Adam Smasher. Самый бронированный противник игры."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Sasquatch — это…",
+              "options": [
+                "Огромная альфа-самка банды Animals с молотом",
+                "Прозвище Adam Smasher",
+                "Имя гитары Kerry"
+              ],
+              "answer": 0,
+              "explanation": "Sasquatch (Matilda K. Rose) — лидер банды Animals в Pacifica. С ней V дерётся на квесте, нанятый Voodoo Boys (которые враждуют с Animals)."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Oda — кто это?",
+              "options": [
+                "Лидер банды Animals",
+                "Самурай Arasaka, телохранитель Hanako",
+                "Фиксер из Watson"
+              ],
+              "answer": 1,
+              "explanation": "Oda — кибернинзя Arasaka с моноволоконным резаком. С ним V дерётся в финальной части основного сюжета."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Placide — это…",
+              "options": [
+                "Лидер Voodoo Boys в Pacifica",
+                "Полицейский Night City",
+                "Брат Panam"
+              ],
+              "answer": 0,
+              "explanation": "Placide — один из лидеров Voodoo Boys. Заставляет V нырнуть в Net через Brendan-автомат, чтобы найти Brigitte."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Где V встречает Adam Smasher в финальной битве?",
+              "options": [
+                "В Mikoshi внутри Arasaka Tower (или схожих локациях по концовке)",
+                "В Pacifica",
+                "В пустыне"
+              ],
+              "answer": 0,
+              "explanation": "Финальный бой почти всегда происходит на пути к Mikoshi в Arasaka Tower (или на крыше — в концовке с Panam)."
+            }
+          ]
+        },
+        {
+          "id": "v15_iconic",
+          "datapad": "[afterlife_wall_of_legends] Choom, это финальная проверка. Самые культовые моменты, фразы и факты вселенной. Wake up, samurai. We have a quiz to burn.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Какая фраза Johnny Silverhand стала самой узнаваемой?",
+              "options": [
+                "'Wake up, samurai. We have a city to burn.'",
+                "'Я твой отец.'",
+                "'Hasta la vista, baby.'"
+              ],
+              "answer": 0,
+              "explanation": "Этой фразой Johnny будит V в первой совместной сцене. Она стала символом всей игры."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Песня 'Never Fade Away' посвящена…",
+              "options": [
+                "Альт Каннингэм, девушке Johnny",
+                "Panam",
+                "Maman Brigitte"
+              ],
+              "answer": 0,
+              "explanation": "Johnny написал Never Fade Away для Alt Cunningham — нетраннерши, которую Arasaka превратили в Soulkiller-программу."
+            },
+            {
+              "id": "Q3",
+              "prompt": "В какой концовке V уезжает в Бэдлэндс с кочевниками?",
+              "options": [
+                "Концовка с Panam и Aldecaldos ('The Star')",
+                "Концовка с Arasaka",
+                "Концовка 'Don't Fear The Reaper'"
+              ],
+              "answer": 0,
+              "explanation": "В концовке The Star V вместе с Panam и Aldecaldos штурмуют Arasaka Tower через подземные тоннели и уезжают в пустыню."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Кто играет Johnny Silverhand?",
+              "options": [
+                "Киану Ривз",
+                "Идрис Эльба",
+                "Брэд Питт"
+              ],
+              "answer": 0,
+              "explanation": "Киану Ривз озвучил и сыграл Джонни через motion capture. Его фраза 'You're breathtaking' с E3 — отдельная легенда."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Кто играет Solomon Reed в Phantom Liberty?",
+              "options": [
+                "Идрис Эльба",
+                "Киану Ривз",
+                "Майкл Фассбендер"
+              ],
+              "answer": 0,
+              "explanation": "Идрис Эльба сыграл Соломона Рида — спящего агента FIA в Dogtown. Его появление — главная звезда Phantom Liberty."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m_math",
+      "code": "ARASAKA_CRYPTO_BREAK",
+      "title": "ARASAKA CRYPTO BREAK",
+      "subtitle": "MATH ENCRYPTION // 5 PTS",
+      "skill": "quiz",
+      "subject": "math",
+      "themeColor": "yellow",
+      "districtTag": "ARASAKA TOWER",
+      "maxPoints": 5,
+      "variants": [
+        {
+          "id": "v1_arith",
+          "datapad": "[arasaka_packet.enc] Зашифрованные пакеты Arasaka. Чтобы расшифровать, реши арифметику. Калькулятор отрублен — головой.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Найди значение: 5 · 14 − 4 · 3",
+              "options": [
+                "55",
+                "58",
+                "62"
+              ],
+              "answer": 1,
+              "explanation": "5·14 = 70; 4·3 = 12; 70 − 12 = 58."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Найди значение: 17 + 3 · 3 − 18",
+              "options": [
+                "6",
+                "8",
+                "11"
+              ],
+              "answer": 1,
+              "explanation": "Сначала умножение: 3·3 = 9. Потом 17 + 9 − 18 = 8."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Найди значение: 67 − (29 + 28 : 7)",
+              "options": [
+                "30",
+                "34",
+                "38"
+              ],
+              "answer": 1,
+              "explanation": "В скобках: 28:7 = 4; 29 + 4 = 33. Затем 67 − 33 = 34."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Найди значение: 304 − 817 : 19",
+              "options": [
+                "261",
+                "271",
+                "260"
+              ],
+              "answer": 0,
+              "explanation": "Сначала деление: 817 : 19 = 43. Затем 304 − 43 = 261."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Найди значение: 21 − 8 · (19 − 17)",
+              "options": [
+                "3",
+                "5",
+                "7"
+              ],
+              "answer": 1,
+              "explanation": "В скобках: 19 − 17 = 2; 8·2 = 16; 21 − 16 = 5."
+            }
+          ]
+        },
+        {
+          "id": "v2_words",
+          "datapad": "[arasaka_packet.enc] Текстовые задачи из логистических отчётов корпы. Распарсь и реши.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "На блузку нужно 80 см ткани, на юбку — 90 см. Из 5 м ткани сшили 4 блузки и несколько юбок. Сколько юбок?",
+              "options": [
+                "1",
+                "2",
+                "3"
+              ],
+              "answer": 1,
+              "explanation": "5 м = 500 см. На 4 блузки: 4·80 = 320 см. Осталось: 500 − 320 = 180 см. Юбок: 180:90 = 2."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Ученику нужно пробежать 7 раз по 100 м и несколько раз по 60 м, чтобы получился 1 км. Сколько раз по 60 м?",
+              "options": [
+                "3",
+                "4",
+                "5"
+              ],
+              "answer": 2,
+              "explanation": "1 км = 1000 м. 7·100 = 700 м. Осталось 1000 − 700 = 300 м. 300:60 = 5."
+            },
+            {
+              "id": "Q3",
+              "prompt": "В коробке 24 мяча. Красные — 1/6 всех. Сколько красных мячей?",
+              "options": [
+                "3",
+                "4",
+                "6"
+              ],
+              "answer": 1,
+              "explanation": "1/6 от 24 — это 24:6 = 4."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Поезд отправился в 10:20 и был в пути 4 ч 50 мин. Когда прибыл?",
+              "options": [
+                "14:10",
+                "15:10",
+                "15:50"
+              ],
+              "answer": 1,
+              "explanation": "10:20 + 4:50. Минуты: 20 + 50 = 70 = 1 ч 10 мин. Часы: 10 + 4 + 1 = 15. Итого 15:10."
+            },
+            {
+              "id": "Q5",
+              "prompt": "У Маши 3 юбки и 2 кофты. Сколько РАЗНЫХ нарядов из юбки и кофты?",
+              "options": [
+                "5",
+                "6",
+                "9"
+              ],
+              "answer": 1,
+              "explanation": "К каждой юбке подходят 2 кофты: 3·2 = 6 разных нарядов."
+            }
+          ]
+        },
+        {
+          "id": "v3_geom",
+          "datapad": "[arasaka_packet.enc] Спатиальный сканер: размеры, периметры, площади. Без линейки, чум.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Прямоугольник 3×7 клеток (1 клетка = 1 см). Найди периметр.",
+              "options": [
+                "10 см",
+                "20 см",
+                "21 см"
+              ],
+              "answer": 1,
+              "explanation": "Периметр прямоугольника: P = 2·(a + b) = 2·(3 + 7) = 20 см."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Прямоугольник 4×7 см. Площадь?",
+              "options": [
+                "11 см²",
+                "21 см²",
+                "28 см²"
+              ],
+              "answer": 2,
+              "explanation": "Площадь прямоугольника: S = a·b = 4·7 = 28 см²."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Периметр квадрата 156 дм. Какова длина его стороны?",
+              "options": [
+                "29 дм",
+                "39 дм",
+                "49 дм"
+              ],
+              "answer": 1,
+              "explanation": "У квадрата 4 равные стороны. Сторона: 156 : 4 = 39 дм."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Сколько минут в 2 ч 15 мин?",
+              "options": [
+                "75",
+                "115",
+                "135"
+              ],
+              "answer": 2,
+              "explanation": "1 ч = 60 мин. 2 ч = 120 мин. 120 + 15 = 135 мин."
+            },
+            {
+              "id": "Q5",
+              "prompt": "3 кг 200 г — сколько это граммов?",
+              "options": [
+                "320 г",
+                "3200 г",
+                "32 000 г"
+              ],
+              "answer": 1,
+              "explanation": "1 кг = 1000 г. 3 кг = 3000 г. 3000 + 200 = 3200 г."
+            }
+          ]
+        },
+        {
+          "id": "v4_data",
+          "datapad": "[arasaka_packet.enc] Корпоративная статистика. Извлеки числа из таблиц/диаграмм.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "В классах: 4А — 25, 4Б — 28, 4В — 22, 4Г — 27. На сколько в самом большом классе учеников больше, чем в самом маленьком?",
+              "options": [
+                "3",
+                "5",
+                "6"
+              ],
+              "answer": 2,
+              "explanation": "Самый большой — 4Б (28). Самый маленький — 4В (22). Разница: 28 − 22 = 6."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Удои Любавы за 4 дня: 14 л, 11 л, 12 л, 13 л. Всего за 4 дня?",
+              "options": [
+                "48 л",
+                "50 л",
+                "52 л"
+              ],
+              "answer": 1,
+              "explanation": "14 + 11 + 12 + 13 = 50 л."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Ваня встал в 7:00, сразу начал завтрак (20 мин). Когда он закончил завтракать?",
+              "options": [
+                "7:15",
+                "7:20",
+                "7:35"
+              ],
+              "answer": 1,
+              "explanation": "7:00 + 20 мин = 7:20."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В библиотеке 320 книг. Учебники — 1/4 всех книг. Сколько учебников?",
+              "options": [
+                "64",
+                "80",
+                "100"
+              ],
+              "answer": 1,
+              "explanation": "1/4 от 320 — это 320 : 4 = 80."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Длина комнаты 7 м, ширина 5 м. Площадь?",
+              "options": [
+                "12 м²",
+                "24 м²",
+                "35 м²"
+              ],
+              "answer": 2,
+              "explanation": "S = 7 · 5 = 35 м²."
+            }
+          ]
+        },
+        {
+          "id": "v5_3step",
+          "datapad": "[arasaka_packet.enc] Логистика дрифт-экспедиции: масса, скорость, доли. 3-4 действия на каждую задачу.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Боря собрал 18 вёдер яблок. Лиза — в 2 раза меньше, чем Боря. Юля — на 10 меньше, чем Боря и Лиза вместе. Сколько вёдер собрала Юля?",
+              "options": [
+                "15",
+                "17",
+                "19"
+              ],
+              "answer": 1,
+              "explanation": "Лиза: 18:2 = 9. Боря+Лиза = 27. Юля: 27 − 10 = 17."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Ящик с яблоками — 12 кг 500 г. Пустой ящик — 2 кг 300 г. Привезли 4 ящика. Какова общая масса яблок?",
+              "options": [
+                "38 кг",
+                "40 кг 800 г",
+                "42 кг"
+              ],
+              "answer": 1,
+              "explanation": "Яблок в одном ящике: 12 кг 500 г − 2 кг 300 г = 10 кг 200 г. В четырёх: 10 кг 200 г · 4 = 40 кг 800 г."
+            },
+            {
+              "id": "Q3",
+              "prompt": "1/5 ленты составляет 7 м. Какова длина ВСЕЙ ленты?",
+              "options": [
+                "12 м",
+                "35 м",
+                "70 м"
+              ],
+              "answer": 1,
+              "explanation": "Если 1/5 = 7 м, то вся лента в 5 раз больше: 7 · 5 = 35 м."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Автомобиль ехал 10 мин со скоростью 900 м/мин, затем сменил скорость на 800 м/мин. Всего проехал 13 км. Сколько минут он ехал ПОСЛЕ смены скорости?",
+              "options": [
+                "3",
+                "5",
+                "7"
+              ],
+              "answer": 1,
+              "explanation": "Сначала: 10·900 = 9000 м. Осталось: 13 000 − 9000 = 4000 м. Время на втором участке: 4000:800 = 5 мин."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Две бригады кладут 2 км дороги. Первая: 10 участков по 80 м. Вторая: 20 одинаковых участков. Какова длина участка у второй бригады?",
+              "options": [
+                "50 м",
+                "60 м",
+                "80 м"
+              ],
+              "answer": 1,
+              "explanation": "Первая бригада: 10·80 = 800 м. 2 км = 2000 м. Вторая: 2000 − 800 = 1200 м. Один участок: 1200:20 = 60 м."
+            }
+          ]
+        },
+        {
+          "id": "v6_logic",
+          "datapad": "[arasaka_packet.enc] Логические шифры. Найди закономерность.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "В гирлянде 21 лампочка: 1 красная, 2 синие, 3 красные, 4 синие, 5 красных, 6 синих. Какого цвета 17-я лампочка?",
+              "options": [
+                "красная",
+                "синяя",
+                "невозможно определить"
+              ],
+              "answer": 1,
+              "explanation": "Группы по позициям: 1 | 2-3 | 4-6 | 7-10 | 11-15 | 16-21. Позиция 17 попадает в группу 16-21 (6 синих)."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Машины стоят в 7 рядов: 4, 3, 4, 3, 4, 3, 4. Сколько рядов по 3 машины?",
+              "options": [
+                "2",
+                "3",
+                "4"
+              ],
+              "answer": 1,
+              "explanation": "Ряды по 3: 2-й, 4-й, 6-й. Всего 3 ряда."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Слава хотел купить 20 конфет — не хватило 3 руб. Купил 15 конфет — осталось 7 руб сдачи. Сколько стоит 1 конфета?",
+              "options": [
+                "1 руб",
+                "2 руб",
+                "3 руб"
+              ],
+              "answer": 1,
+              "explanation": "Разница: на 5 конфет ушло 3 + 7 = 10 руб. Значит, 1 конфета — 10:5 = 2 руб."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В пятиэтажном доме живут Аня, Боря, Вова, Галя, Даша — по одному на этаже. Аня выше Бори, ниже Вовы. Галя — на 2 этаже. Даша — между Борей и Аней. На каком этаже Вова?",
+              "options": [
+                "3",
+                "4",
+                "5"
+              ],
+              "answer": 2,
+              "explanation": "Галя — 2 этаж. Цепочка: Боря < Даша < Аня < Вова. Свободные этажи: 1, 3, 4, 5. Боря — 1, Даша — 3, Аня — 4, Вова — 5."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Аня, Боря и Вася по очереди писали все числа от 1 до 30, по 10 чисел каждый. Сумма у Ани — 100, у Бори — 200. Сумма у Васи?",
+              "options": [
+                "115",
+                "165",
+                "215"
+              ],
+              "answer": 1,
+              "explanation": "Сумма всех чисел от 1 до 30: 30·31:2 = 465. Сумма Васи: 465 − 100 − 200 = 165."
+            }
+          ]
+        },
+        {
+          "id": "v7_mixed",
+          "datapad": "[arasaka_packet.enc] Финальный пакет: всё подряд. Расписания, дроби, многозначные числа.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Семён прибыл в город в понедельник на 4 дня (пн, вт, ср, чт). Музей открыт ВТ и ЧТ. Театр — только в среду. Друг свободен СР и ЧТ. В какой день Семён пойдёт в музей?",
+              "options": [
+                "понедельник",
+                "вторник",
+                "четверг"
+              ],
+              "answer": 1,
+              "explanation": "Театр — фикс среда. Друг — четверг (среда занята). Музей — оставшийся вторник."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Найди значение: 201 777 : 3 − 109 · 2",
+              "options": [
+                "67 041",
+                "67 240",
+                "65 040"
+              ],
+              "answer": 0,
+              "explanation": "201 777 : 3 = 67 259. 109 · 2 = 218. 67 259 − 218 = 67 041."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Спектакль начался в 15:00 и продолжался 2 ч 25 мин. Когда закончился?",
+              "options": [
+                "17:15",
+                "17:25",
+                "17:35"
+              ],
+              "answer": 1,
+              "explanation": "15:00 + 2:25 = 17:25."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В коробке 24 мяча. Красные — 1/6 всех. Зелёные — 1/2 ОСТАВШИХСЯ. Сколько зелёных?",
+              "options": [
+                "8",
+                "10",
+                "12"
+              ],
+              "answer": 1,
+              "explanation": "Красных: 24:6 = 4. Оставшихся: 24 − 4 = 20. Зелёных (1/2 от 20): 20:2 = 10."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Запиши величины в порядке ВОЗРАСТАНИЯ: 320 г, 3 кг 200 г, 32 кг.",
+              "options": [
+                "320 г, 3 кг 200 г, 32 кг",
+                "3 кг 200 г, 320 г, 32 кг",
+                "32 кг, 3 кг 200 г, 320 г"
+              ],
+              "answer": 0,
+              "explanation": "Переводим в граммы: 320 г = 320; 3 кг 200 г = 3200; 32 кг = 32 000. Возрастание: 320 < 3200 < 32 000."
+            }
+          ]
+        },
+        {
+          "id": "v8_school",
+          "datapad": "[arasaka_packet.enc] Перехвачена телеметрия школьного сектора. Расшифруй цифры расписаний и журналов — иначе АИ-надзиратель спалит твой логин.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Найди значение: 8 · 9 − 6 · 7",
+              "options": [
+                "28",
+                "30",
+                "32"
+              ],
+              "answer": 1,
+              "explanation": "8·9 = 72; 6·7 = 42; 72 − 42 = 30."
+            },
+            {
+              "id": "Q2",
+              "prompt": "В классе 28 учеников. На физкультуру пришли все, на математику — на 4 меньше. Сколько учеников на математике?",
+              "options": [
+                "22",
+                "24",
+                "26"
+              ],
+              "answer": 1,
+              "explanation": "28 − 4 = 24 ученика."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Урок начался в 9:15 и длился 45 минут. В какое время он закончился?",
+              "options": [
+                "9:55",
+                "10:00",
+                "10:05"
+              ],
+              "answer": 1,
+              "explanation": "9 ч 15 мин + 45 мин = 9 ч 60 мин = 10 ч 00 мин."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В школьной столовой за день продали 240 булочек. С маком — 1/4 всех булочек. Сколько булочек было с маком?",
+              "options": [
+                "40",
+                "60",
+                "80"
+              ],
+              "answer": 1,
+              "explanation": "1/4 от 240 — это 240 : 4 = 60."
+            },
+            {
+              "id": "Q5",
+              "prompt": "В библиотеке 4 полки. На каждой по 25 учебников математики и по 18 учебников русского. Сколько ВСЕГО учебников на полках?",
+              "options": [
+                "172",
+                "180",
+                "192"
+              ],
+              "answer": 0,
+              "explanation": "На одной полке: 25 + 18 = 43. На четырёх: 43·4 = 172."
+            }
+          ]
+        },
+        {
+          "id": "v9_shop",
+          "datapad": "[arasaka_packet.enc] Шифр супермаркета Найт-Сити. Чтобы пройти кассу-фаервол, посчитай чеки и сдачу — без скана нейроимпланта.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Найди значение: 53 − 3 · 8 + 12",
+              "options": [
+                "35",
+                "39",
+                "41"
+              ],
+              "answer": 2,
+              "explanation": "3·8 = 24; 53 − 24 = 29; 29 + 12 = 41."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Пакет молока стоит 70 руб., буханка хлеба — 45 руб. Сколько стоят 2 пакета молока и 1 хлеб?",
+              "options": [
+                "165 руб.",
+                "175 руб.",
+                "185 руб."
+              ],
+              "answer": 2,
+              "explanation": "2·70 = 140 руб. за молоко. 140 + 45 = 185 руб."
+            },
+            {
+              "id": "Q3",
+              "prompt": "У мамы было 500 руб. Она купила сахар за 80 руб. и муку за 65 руб. Сколько денег осталось?",
+              "options": [
+                "345 руб.",
+                "355 руб.",
+                "365 руб."
+              ],
+              "answer": 1,
+              "explanation": "Потрачено: 80 + 65 = 145 руб. Остаток: 500 − 145 = 355 руб."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В коробке 36 шоколадок. 1/3 раздали в подарок. Сколько шоколадок осталось в коробке?",
+              "options": [
+                "12",
+                "18",
+                "24"
+              ],
+              "answer": 2,
+              "explanation": "1/3 от 36 — это 36:3 = 12 (раздали). Осталось: 36 − 12 = 24."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Ящик с яблоками весит 8 кг 400 г. Пустой ящик — 1 кг 200 г. В магазин привезли 5 таких ящиков. Какова общая масса яблок?",
+              "options": [
+                "35 кг",
+                "36 кг",
+                "42 кг"
+              ],
+              "answer": 1,
+              "explanation": "Яблок в одном ящике: 8 кг 400 г − 1 кг 200 г = 7 кг 200 г. В пяти ящиках: 7 кг 200 г · 5 = 36 кг."
+            }
+          ]
+        },
+        {
+          "id": "v10_sport",
+          "datapad": "[arasaka_packet.enc] Биометрия спортзала. Считай пробеги, секунды, броски — иначе тренер-нетраннер сольёт твой бутcamp в андернет.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Найди значение: 4 · 17 + 3 · 5",
+              "options": [
+                "73",
+                "83",
+                "85"
+              ],
+              "answer": 1,
+              "explanation": "4·17 = 68; 3·5 = 15; 68 + 15 = 83."
+            },
+            {
+              "id": "Q2",
+              "prompt": "На стадионе 6 беговых дорожек. На каждой бежит по 8 спортсменов. Сколько ВСЕГО спортсменов на дорожках?",
+              "options": [
+                "14",
+                "42",
+                "48"
+              ],
+              "answer": 2,
+              "explanation": "6 · 8 = 48 спортсменов."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Тренировка началась в 17:30 и длилась 1 ч 45 мин. Когда закончилась?",
+              "options": [
+                "18:45",
+                "19:00",
+                "19:15"
+              ],
+              "answer": 2,
+              "explanation": "17:30 + 1:45. Минуты: 30 + 45 = 75 = 1 ч 15 мин. Часы: 17 + 1 + 1 = 19. Итого 19:15."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Тренировочное поле прямоугольной формы: длина 100 м, ширина 60 м. Найди периметр.",
+              "options": [
+                "160 м",
+                "260 м",
+                "320 м"
+              ],
+              "answer": 2,
+              "explanation": "P = 2·(100 + 60) = 2·160 = 320 м."
+            },
+            {
+              "id": "Q5",
+              "prompt": "За тренировку Петя сделал 8 подходов по 12 отжиманий. Затем добавил ещё 24 отжимания. Сколько ВСЕГО отжиманий он сделал?",
+              "options": [
+                "96",
+                "108",
+                "120"
+              ],
+              "answer": 2,
+              "explanation": "8·12 = 96 отжиманий за подходы. 96 + 24 = 120 всего."
+            }
+          ]
+        },
+        {
+          "id": "v11_travel",
+          "datapad": "[arasaka_packet.enc] Маршрут-протокол на хайвее. Километры, часы, рейсы — расшифровывай быстро, пока такси-бот не угнало твоего пассажира.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Найди значение: 20 + 20 : 5 − 17",
+              "options": [
+                "3",
+                "5",
+                "7"
+              ],
+              "answer": 2,
+              "explanation": "20:5 = 4; 20 + 4 = 24; 24 − 17 = 7."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Поезд отправился в 7:40 и ехал 3 ч 50 мин. Во сколько он прибыл?",
+              "options": [
+                "10:30",
+                "11:30",
+                "11:50"
+              ],
+              "answer": 1,
+              "explanation": "7:40 + 3:50. Минуты: 40 + 50 = 90 = 1 ч 30 мин. Часы: 7 + 3 + 1 = 11. Итого 11:30."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Автобус едет со скоростью 60 км/ч. Сколько километров он проедет за 4 часа?",
+              "options": [
+                "180 км",
+                "240 км",
+                "320 км"
+              ],
+              "answer": 1,
+              "explanation": "S = v · t = 60 · 4 = 240 км."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Самолёт летит из Москвы в Казань 1 ч 20 мин. Сколько ВСЕГО минут длится полёт?",
+              "options": [
+                "80 мин",
+                "120 мин",
+                "140 мин"
+              ],
+              "answer": 0,
+              "explanation": "1 ч = 60 мин. 1 ч 20 мин = 60 + 20 = 80 мин."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Турист прошёл за день 24 км. До обеда — 1/3 пути, после обеда — остальное. Сколько километров он прошёл ПОСЛЕ обеда?",
+              "options": [
+                "8 км",
+                "12 км",
+                "16 км"
+              ],
+              "answer": 2,
+              "explanation": "До обеда: 1/3 от 24 = 24:3 = 8 км. После обеда: 24 − 8 = 16 км."
+            }
+          ]
+        },
+        {
+          "id": "v12_repair",
+          "datapad": "[arasaka_packet.enc] Журнал ремонтной бригады. Метры, плитки, литры — без точного расчёта стенка треснет, и нетраннер выпадет в реальный мир.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Найди значение: 30 · 32",
+              "options": [
+                "620",
+                "920",
+                "960"
+              ],
+              "answer": 2,
+              "explanation": "30·32 = 3·32·10 = 96·10 = 960."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Комната прямоугольной формы: длина 8 м, ширина 4 м. Найди площадь пола.",
+              "options": [
+                "24 м²",
+                "32 м²",
+                "40 м²"
+              ],
+              "answer": 1,
+              "explanation": "S = 8 · 4 = 32 м²."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Периметр прямоугольной комнаты 26 м, длина 8 м. Найди ширину.",
+              "options": [
+                "3 м",
+                "5 м",
+                "9 м"
+              ],
+              "answer": 1,
+              "explanation": "P/2 = 26:2 = 13 м (это длина + ширина). Ширина: 13 − 8 = 5 м."
+            },
+            {
+              "id": "Q4",
+              "prompt": "На покраску стены ушло 2 банки краски по 3 кг 500 г каждая. Сколько ВСЕГО краски ушло?",
+              "options": [
+                "6 кг",
+                "6 кг 500 г",
+                "7 кг"
+              ],
+              "answer": 2,
+              "explanation": "3 кг 500 г · 2 = 7 кг."
+            },
+            {
+              "id": "Q5",
+              "prompt": "На пол комнаты площадью 32 м² уложили плитку. 1/8 пола — тёмная плитка, остальное — светлая. Сколько квадратных метров СВЕТЛОЙ плитки?",
+              "options": [
+                "4 м²",
+                "24 м²",
+                "28 м²"
+              ],
+              "answer": 2,
+              "explanation": "Тёмная: 1/8 от 32 = 32:8 = 4 м². Светлая: 32 − 4 = 28 м²."
+            }
+          ]
+        },
+        {
+          "id": "v13_kitchen",
+          "datapad": "[arasaka_packet.enc] Гастро-протокол кухни-неоновой. Граммы, литры, порции — ошибся в дозировке, и синтезатор еды выдаст склизкий нудлпак.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Найди значение: (45 + 27) : 8",
+              "options": [
+                "7",
+                "9",
+                "11"
+              ],
+              "answer": 1,
+              "explanation": "В скобках: 45 + 27 = 72. Затем 72:8 = 9."
+            },
+            {
+              "id": "Q2",
+              "prompt": "На один пирог нужно 250 г муки. Сколько граммов муки нужно на 4 пирога?",
+              "options": [
+                "750 г",
+                "1000 г",
+                "1250 г"
+              ],
+              "answer": 1,
+              "explanation": "250 · 4 = 1000 г."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Сколько граммов в 1 кг 800 г?",
+              "options": [
+                "180 г",
+                "1080 г",
+                "1800 г"
+              ],
+              "answer": 2,
+              "explanation": "1 кг = 1000 г. 1000 + 800 = 1800 г."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В банке 30 печений. Маше дали 1/5 печений. Сколько печений ОСТАЛОСЬ в банке?",
+              "options": [
+                "6",
+                "20",
+                "24"
+              ],
+              "answer": 2,
+              "explanation": "1/5 от 30 = 30:5 = 6 (отдали Маше). Осталось: 30 − 6 = 24."
+            },
+            {
+              "id": "Q5",
+              "prompt": "В 3 одинаковых кастрюлях налито поровну 9 литров супа. К каждой кастрюле долили ещё по 1 литру. Сколько ВСЕГО литров супа теперь в трёх кастрюлях?",
+              "options": [
+                "10 л",
+                "12 л",
+                "15 л"
+              ],
+              "answer": 1,
+              "explanation": "Было 9 л. Долили 3·1 = 3 л. Стало 9 + 3 = 12 л."
+            }
+          ]
+        },
+        {
+          "id": "v14_library",
+          "datapad": "[arasaka_packet.enc] Архив библиотеки Найт-Сити. Тома, страницы, абонементы — расшифровывай, или книжный AI отзовёт твой читательский билет.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Найди значение: 100 − 6 · (8 + 4)",
+              "options": [
+                "28",
+                "32",
+                "40"
+              ],
+              "answer": 0,
+              "explanation": "В скобках: 8 + 4 = 12. Затем 6·12 = 72. Затем 100 − 72 = 28."
+            },
+            {
+              "id": "Q2",
+              "prompt": "В библиотеке 5 шкафов по 200 книг и ещё 3 шкафа по 150 книг. Сколько книг ВСЕГО в библиотеке?",
+              "options": [
+                "1200",
+                "1300",
+                "1450"
+              ],
+              "answer": 2,
+              "explanation": "5·200 = 1000. 3·150 = 450. Всего 1000 + 450 = 1450."
+            },
+            {
+              "id": "Q3",
+              "prompt": "По таблице выдачи книг за 3 дня: пн — 45, вт — 38, ср — 52. В какой день выдали БОЛЬШЕ всего книг?",
+              "options": [
+                "понедельник",
+                "вторник",
+                "среда"
+              ],
+              "answer": 2,
+              "explanation": "52 > 45 > 38. Больше всего — в среду."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В книге 240 страниц. Витя прочитал 1/6 книги. Сколько страниц он прочитал?",
+              "options": [
+                "30",
+                "40",
+                "60"
+              ],
+              "answer": 1,
+              "explanation": "1/6 от 240 = 240:6 = 40."
+            },
+            {
+              "id": "Q5",
+              "prompt": "Маша читает каждый день 25 страниц. Сколько дней ей понадобится, чтобы прочитать книгу в 200 страниц?",
+              "options": [
+                "6 дней",
+                "8 дней",
+                "10 дней"
+              ],
+              "answer": 1,
+              "explanation": "200 : 25 = 8 дней."
+            }
+          ]
+        },
+        {
+          "id": "v15_garden",
+          "datapad": "[arasaka_packet.enc] Агро-сектор пригорода. Грядки, ведра, урожай — данные с дронов-опрыскивателей. Считай в уме, иначе теплица переполнится.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Найди значение: 7 · 9 + 4 · 6",
+              "options": [
+                "77",
+                "87",
+                "93"
+              ],
+              "answer": 1,
+              "explanation": "7·9 = 63; 4·6 = 24; 63 + 24 = 87."
+            },
+            {
+              "id": "Q2",
+              "prompt": "На грядке 6 рядов огурцов. В каждом ряду по 12 кустов. Сколько ВСЕГО кустов огурцов на грядке?",
+              "options": [
+                "62",
+                "72",
+                "84"
+              ],
+              "answer": 1,
+              "explanation": "6 · 12 = 72 куста."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Огород имеет форму прямоугольника 20 м на 15 м. Найди его периметр.",
+              "options": [
+                "35 м",
+                "60 м",
+                "70 м"
+              ],
+              "answer": 2,
+              "explanation": "P = 2·(20 + 15) = 2·35 = 70 м."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Собрали 60 кг яблок. 1/3 пустили на варенье, остальное — на сок. Сколько килограммов яблок пошло на сок?",
+              "options": [
+                "20 кг",
+                "30 кг",
+                "40 кг"
+              ],
+              "answer": 2,
+              "explanation": "На варенье: 1/3 от 60 = 60:3 = 20 кг. На сок: 60 − 20 = 40 кг."
+            },
+            {
+              "id": "Q5",
+              "prompt": "На клумбе 4 ряда тюльпанов: 9 красных, 7 жёлтых, 9 красных, 7 жёлтых. Сколько ВСЕГО красных тюльпанов на клумбе?",
+              "options": [
+                "14",
+                "16",
+                "18"
+              ],
+              "answer": 2,
+              "explanation": "Красные ряды дают 9 + 9 = 18 тюльпанов."
+            }
+          ]
+        },
+        {
+          "id": "v16_party",
+          "datapad": "[arasaka_packet.enc] Логистика дня рождения. Гости, подарки, торты — без точного расчёта тортовый бот забудет про свечи, и праздник провалится.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Найди значение: 6 · 8 − 36 : 4",
+              "options": [
+                "27",
+                "39",
+                "42"
+              ],
+              "answer": 1,
+              "explanation": "6·8 = 48; 36:4 = 9; 48 − 9 = 39."
+            },
+            {
+              "id": "Q2",
+              "prompt": "На день рождения пришли 12 гостей. У каждого — 3 шарика. Сколько ВСЕГО шариков?",
+              "options": [
+                "24",
+                "30",
+                "36"
+              ],
+              "answer": 2,
+              "explanation": "12 · 3 = 36 шариков."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Праздник начался в 16:00 и продолжался 3 ч 30 мин. Когда он закончился?",
+              "options": [
+                "18:30",
+                "19:00",
+                "19:30"
+              ],
+              "answer": 2,
+              "explanation": "16:00 + 3:30 = 19:30."
+            },
+            {
+              "id": "Q4",
+              "prompt": "Торт разрезали на 24 куска. Гости съели 1/3 торта. Сколько кусков ОСТАЛОСЬ?",
+              "options": [
+                "8",
+                "12",
+                "16"
+              ],
+              "answer": 2,
+              "explanation": "1/3 от 24 = 24:3 = 8 (съели). Осталось: 24 − 8 = 16."
+            },
+            {
+              "id": "Q5",
+              "prompt": "У Кати есть 2 платья (красное и синее) и 3 пары туфель (белые, чёрные и розовые). Сколько РАЗНЫХ нарядов из платья и туфель она может составить?",
+              "options": [
+                "5",
+                "6",
+                "9"
+              ],
+              "answer": 1,
+              "explanation": "К каждому из 2 платьев — 3 пары туфель: 2·3 = 6 нарядов."
+            }
+          ]
+        },
+        {
+          "id": "v17_workshop",
+          "datapad": "[arasaka_packet.enc] Финальный пакет — мастерская кибер-кодера. Доски, гвозди, доли деталей. Реши без помощи нейросети — иначе Arasaka запатентует твой проект первыми.",
+          "questions": [
+            {
+              "id": "Q1",
+              "prompt": "Найди значение: 312 · 3 − 256",
+              "options": [
+                "680",
+                "692",
+                "936"
+              ],
+              "answer": 0,
+              "explanation": "312·3 = 936; 936 − 256 = 680."
+            },
+            {
+              "id": "Q2",
+              "prompt": "Найди значение: 8 064 : 9",
+              "options": [
+                "796",
+                "816",
+                "896"
+              ],
+              "answer": 2,
+              "explanation": "8064 : 9 = 896 (проверка: 9·896 = 8064)."
+            },
+            {
+              "id": "Q3",
+              "prompt": "Расположи в порядке ВОЗРАСТАНИЯ: 4 м 50 см, 380 см, 4 м 5 см.",
+              "options": [
+                "380 см, 4 м 5 см, 4 м 50 см",
+                "4 м 5 см, 380 см, 4 м 50 см",
+                "380 см, 4 м 50 см, 4 м 5 см"
+              ],
+              "answer": 0,
+              "explanation": "Переводим в см: 4 м 50 см = 450 см; 380 см = 380 см; 4 м 5 см = 405 см. Возрастание: 380 < 405 < 450, то есть 380 см, 4 м 5 см, 4 м 50 см."
+            },
+            {
+              "id": "Q4",
+              "prompt": "В мастерской 48 досок. 1/4 пошло на полку, 1/3 ОСТАВШИХСЯ — на стол. Сколько досок ушло на стол?",
+              "options": [
+                "12",
+                "16",
+                "18"
+              ],
+              "answer": 0,
+              "explanation": "На полку: 1/4 от 48 = 48:4 = 12. Осталось: 48 − 12 = 36. На стол: 1/3 от 36 = 36:3 = 12."
+            },
+            {
+              "id": "Q5",
+              "prompt": "У Серёжи 50 руб. Он хотел купить 8 одинаковых наклеек, но не хватило 6 руб. Тогда купил 5 наклеек, и осталось 15 руб. сдачи. Сколько стоит 1 наклейка?",
+              "options": [
+                "5 руб.",
+                "7 руб.",
+                "8 руб."
+              ],
+              "answer": 1,
+              "explanation": "Разница: на 3 наклейки ушло 6 + 15 = 21 руб. Цена 1 наклейки: 21 : 3 = 7 руб."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

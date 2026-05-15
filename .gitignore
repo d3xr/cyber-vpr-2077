@@ -1,0 +1,29 @@
+# deps
+node_modules/
+server/node_modules/
+
+# build artifacts (reproducible via npm run build / tsc)
+dist/
+server/dist/
+
+# runtime state — NEVER commit (prod leaderboard DB lives on server; this is local mirror)
+server/data/
+*.db
+*.db-wal
+*.db-shm
+
+# playwright
+e2e/playwright-report/
+e2e/test-results/
+test-results/
+playwright-report/
+/playwright/.cache/
+
+# os / packaging junk
+.DS_Store
+*.tar.gz
+
+# infra docs / secrets — NOT in public repo (handed to operators separately)
+DEPLOY.md
+scripts/deploy.env
+research/

@@ -1,0 +1,881 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* augmented-ui — sci-fi clipped/notched corners (THE CP2077-look) */
+@import 'augmented-ui/augmented-ui.min.css';
+
+/* Oxanium — display font close to Cyberpunk 2077 brand typography (Google Fonts, OFL) */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+  --neon-cyan: #00f0ff;
+  --neon-yellow: #fcee0a;
+  --neon-magenta: #ff003c;
+  --neon-green: #39ff14;
+  --neon-purple: #b026ff;
+  /* augmented-ui customisation — clip sizes for our panels */
+  --aug-tl: 12px;
+  --aug-tr: 12px;
+  --aug-br: 12px;
+  --aug-bl: 12px;
+  --aug-border-all: 1px;
+  --aug-border-bg: rgba(252, 238, 10, 0.55);
+}
+
+/* Notched panel preset — yellow accent border, dark bg */
+[data-augmented-ui].nc-panel {
+  --aug-border-bg: rgba(252, 238, 10, 0.6);
+  --aug-inlay-bg: rgba(10, 14, 20, 0.88);
+  background-clip: padding-box;
+}
+[data-augmented-ui].nc-panel-cyan {
+  --aug-border-bg: rgba(0, 240, 255, 0.45);
+  --aug-inlay-bg: rgba(10, 14, 20, 0.85);
+}
+[data-augmented-ui].nc-panel-magenta {
+  --aug-border-bg: rgba(255, 0, 60, 0.6);
+  --aug-inlay-bg: rgba(10, 14, 20, 0.88);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #0a0e14;
+  color: #e8f4ff;
+  font-family: 'Rajdhani', system-ui, sans-serif;
+  letter-spacing: 0.04em;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  user-select: none;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+input,
+select,
+textarea {
+  font-family: 'Share Tech Mono', ui-monospace, monospace;
+  background: rgba(0, 0, 0, 0.4);
+  color: #e8f4ff;
+  caret-color: #00f0ff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+::selection {
+  background: rgba(0, 240, 255, 0.4);
+  color: #0a0e14;
+}
+
+/* Background grid */
+.bg-grid {
+  background-color: #0a0e14;
+  background-image:
+    linear-gradient(rgba(0, 240, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(176, 38, 255, 0.18), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(0, 240, 255, 0.12), transparent 70%);
+  background-size: 48px 48px, 48px 48px, 100% 100%, 100% 100%;
+}
+
+/* CRT scanlines overlay — opacity per ergonomics guideline (≤0.08) */
+.crt::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.0) 0,
+      rgba(255, 255, 255, 0.0) 2px,
+      rgba(0, 0, 0, 0.06) 3px,
+      rgba(0, 0, 0, 0.06) 4px
+    );
+  mix-blend-mode: multiply;
+  opacity: 1;
+  z-index: 70;
+}
+
+.crt::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+  z-index: 71;
+}
+
+.scanline-roll {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 240, 255, 0.06) 49%,
+    rgba(0, 240, 255, 0.18) 50%,
+    rgba(0, 240, 255, 0.06) 51%,
+    transparent 100%
+  );
+  background-size: 100% 8px;
+  animation: rollScan 6s linear infinite;
+  z-index: 72;
+  mix-blend-mode: screen;
+}
+
+@keyframes rollScan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+/* Glitch on text */
+.glitch-text {
+  position: relative;
+  display: inline-block;
+  color: #e8f4ff;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.glitch-text::before {
+  color: #ff003c;
+  transform: translate(-2px, 0);
+  mix-blend-mode: screen;
+  opacity: 0.85;
+  animation: glitchLeft 3.4s infinite steps(8);
+}
+
+.glitch-text::after {
+  color: #00f0ff;
+  transform: translate(2px, 0);
+  mix-blend-mode: screen;
+  opacity: 0.85;
+  animation: glitchRight 3.7s infinite steps(8);
+}
+
+@keyframes glitchLeft {
+  0%, 78%, 100% { transform: translate(-2px, 0); clip-path: inset(0 0 0 0); }
+  80% { transform: translate(-3px, 1px); clip-path: inset(20% 0 60% 0); }
+  82% { transform: translate(-1px, -1px); clip-path: inset(60% 0 10% 0); }
+  85% { transform: translate(-4px, 0); clip-path: inset(40% 0 40% 0); }
+}
+
+@keyframes glitchRight {
+  0%, 76%, 100% { transform: translate(2px, 0); clip-path: inset(0 0 0 0); }
+  80% { transform: translate(3px, -1px); clip-path: inset(10% 0 70% 0); }
+  83% { transform: translate(1px, 2px); clip-path: inset(50% 0 30% 0); }
+  86% { transform: translate(4px, 0); clip-path: inset(30% 0 50% 0); }
+}
+
+/* HUD bracket frames */
+.hud-frame {
+  position: relative;
+}
+
+.hud-frame::before,
+.hud-frame::after,
+.hud-frame > .hud-corner-tl,
+.hud-frame > .hud-corner-br {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: var(--neon-cyan);
+  border-style: solid;
+  pointer-events: none;
+}
+
+.hud-frame::before {
+  top: -1px;
+  left: -1px;
+  border-width: 2px 0 0 2px;
+}
+
+.hud-frame::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 2px 2px 0;
+}
+
+.hud-frame > .hud-corner-tr {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--neon-cyan);
+  border-width: 2px 2px 0 0;
+  pointer-events: none;
+}
+
+.hud-frame > .hud-corner-bl {
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--neon-cyan);
+  border-width: 0 0 2px 2px;
+  pointer-events: none;
+}
+
+.hud-frame.hud-purple::before,
+.hud-frame.hud-purple::after,
+.hud-frame.hud-purple > .hud-corner-tr,
+.hud-frame.hud-purple > .hud-corner-bl {
+  border-color: var(--neon-purple);
+}
+
+.hud-frame.hud-yellow::before,
+.hud-frame.hud-yellow::after,
+.hud-frame.hud-yellow > .hud-corner-tr,
+.hud-frame.hud-yellow > .hud-corner-bl {
+  border-color: var(--neon-yellow);
+}
+
+.hud-frame.hud-green::before,
+.hud-frame.hud-green::after,
+.hud-frame.hud-green > .hud-corner-tr,
+.hud-frame.hud-green > .hud-corner-bl {
+  border-color: var(--neon-green);
+}
+
+.hud-frame.hud-magenta::before,
+.hud-frame.hud-magenta::after,
+.hud-frame.hud-magenta > .hud-corner-tr,
+.hud-frame.hud-magenta > .hud-corner-bl {
+  border-color: var(--neon-magenta);
+}
+
+/* Cyber select / input */
+.cyber-input {
+  background: rgba(10, 14, 20, 0.8);
+  border: 1px solid rgba(0, 240, 255, 0.45);
+  padding: 0.55rem 0.85rem;
+  color: #e8f4ff;
+  font-family: 'Share Tech Mono', monospace;
+  letter-spacing: 0.06em;
+  transition: all 120ms ease;
+}
+
+.cyber-input:focus {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.5);
+  background: rgba(0, 240, 255, 0.05);
+}
+
+.cyber-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background:
+    linear-gradient(135deg, transparent 50%, var(--neon-cyan) 50%) calc(100% - 14px) 55% / 8px 8px no-repeat,
+    rgba(10, 14, 20, 0.85);
+  border: 1px solid rgba(0, 240, 255, 0.55);
+  color: #e8f4ff;
+  padding: 0.4rem 1.6rem 0.4rem 0.7rem;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.cyber-select:focus {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 14px rgba(0, 240, 255, 0.6);
+}
+
+.cyber-btn {
+  position: relative;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid var(--neon-cyan);
+  color: var(--neon-cyan);
+  padding: 0.7rem 1.4rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: all 140ms ease;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.6);
+}
+
+.cyber-btn:hover:not(:disabled) {
+  background: rgba(0, 240, 255, 0.18);
+  box-shadow: 0 0 22px rgba(0, 240, 255, 0.55);
+}
+
+.cyber-btn-yellow {
+  background: rgba(252, 238, 10, 0.1);
+  border-color: var(--neon-yellow);
+  color: var(--neon-yellow);
+  text-shadow: 0 0 6px rgba(252, 238, 10, 0.6);
+}
+
+.cyber-btn-yellow:hover:not(:disabled) {
+  background: rgba(252, 238, 10, 0.2);
+  box-shadow: 0 0 22px rgba(252, 238, 10, 0.55);
+}
+
+.cyber-btn-magenta {
+  background: rgba(255, 0, 60, 0.1);
+  border-color: var(--neon-magenta);
+  color: var(--neon-magenta);
+  text-shadow: 0 0 6px rgba(255, 0, 60, 0.6);
+}
+
+.cyber-btn-magenta:hover:not(:disabled) {
+  background: rgba(255, 0, 60, 0.2);
+  box-shadow: 0 0 22px rgba(255, 0, 60, 0.55);
+}
+
+.cyber-btn-purple {
+  background: rgba(176, 38, 255, 0.1);
+  border-color: var(--neon-purple);
+  color: var(--neon-purple);
+  text-shadow: 0 0 6px rgba(176, 38, 255, 0.6);
+}
+
+.cyber-btn-purple:hover:not(:disabled) {
+  background: rgba(176, 38, 255, 0.2);
+  box-shadow: 0 0 22px rgba(176, 38, 255, 0.55);
+}
+
+.cursor-blink::after {
+  content: '▮';
+  margin-left: 0.15em;
+  color: var(--neon-cyan);
+  animation: cursor 1s steps(2) infinite;
+}
+
+/* Skyline parallax (pure CSS) */
+.skyline {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.skyline-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-position: bottom center;
+}
+
+.shake-screen {
+  animation: shake 220ms;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-3px, 1px); }
+  40% { transform: translate(2px, -2px); }
+  60% { transform: translate(-2px, 2px); }
+  80% { transform: translate(3px, -1px); }
+}
+
+.matrix-rain {
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--neon-green);
+  text-shadow: 0 0 6px rgba(57, 255, 20, 0.7);
+  white-space: pre;
+  line-height: 1;
+}
+
+.progress-track {
+  background: rgba(0, 240, 255, 0.08);
+  height: 8px;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-yellow));
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.5);
+  transition: width 350ms ease;
+}
+
+.hp-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--neon-magenta), var(--neon-yellow));
+  box-shadow: 0 0 12px rgba(255, 0, 60, 0.4);
+  transition: width 350ms ease;
+}
+
+.label-tag {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.5);
+}
+
+@media (max-width: 900px) {
+  .crt::after { background: none; }
+}
+
+/* ============================================================================
+ * KOROVAN MODE — secret legacy-RPG skin (OLD-NET archive 2006)
+ * ============================================================================
+ * Activates by adding `korovan-mode` class to <body>. Suppresses CRT/scanline
+ * effects from the cyberpunk skin and applies a parchment+Times look that
+ * mimics how a teenager in 2006 would imagine an RPG UI.
+ *
+ * Color palette intentionally clashes with the cyberpunk skin — that's the joke.
+ */
+:root {
+  --kor-paper:   #f0e3c2;
+  --kor-paper-2: #e8d8a8;
+  --kor-ink:     #2a1810;
+  --kor-ink-2:   #5a3820;
+  --kor-shadow:  #8b6f47;
+  --kor-blood:   #8b0000;
+  --kor-gold:    #b8860b;
+  --kor-forest:  #2d5016;
+}
+
+body.korovan-mode {
+  background: var(--kor-paper);
+  color: var(--kor-ink);
+  font-family: 'Times New Roman', 'Georgia', serif;
+  letter-spacing: 0;
+}
+
+/* Kill the cyberpunk CRT overlay in korovan mode — wrong era. */
+body.korovan-mode .crt::before,
+body.korovan-mode .crt::after { content: none; }
+
+/* Parchment texture: layered radial gradients = papery noise without an image. */
+body.korovan-mode {
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(139, 111, 71, 0.18), transparent 55%),
+    radial-gradient(ellipse at 80% 90%, rgba(139, 111, 71, 0.20), transparent 55%),
+    radial-gradient(ellipse at 60% 30%, rgba(184, 134, 11, 0.10), transparent 60%),
+    linear-gradient(180deg, #f4e8c8 0%, #e8d8a8 100%);
+}
+
+.kor-root {
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Typography ──────────────────────────────────────────────────────────── */
+.kor-title {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: var(--kor-blood);
+  text-shadow:
+    2px 2px 0 var(--kor-shadow),
+    4px 4px 0 rgba(42, 24, 16, 0.4);
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.kor-subtitle {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  color: var(--kor-ink-2);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.kor-body {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--kor-ink);
+}
+
+/* ── Parchment panel — main container for content blocks ─────────────────── */
+.kor-panel {
+  background:
+    linear-gradient(180deg, rgba(255, 248, 220, 0.7) 0%, rgba(232, 216, 168, 0.7) 100%),
+    var(--kor-paper);
+  border: 2px solid var(--kor-shadow);
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+  box-shadow:
+    inset 0 0 24px rgba(139, 111, 71, 0.25),
+    0 4px 16px rgba(42, 24, 16, 0.3);
+  position: relative;
+}
+
+/* Curled-corner decoration — pseudo-elements give that "torn parchment" feel */
+.kor-panel::before,
+.kor-panel::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: var(--kor-shadow);
+  opacity: 0.25;
+  pointer-events: none;
+}
+.kor-panel::before { top: 0; left: 0; clip-path: polygon(0 0, 100% 0, 0 100%); }
+.kor-panel::after  { bottom: 0; right: 0; clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+
+/* ── Buttons — ranne-2000s "выпуклые" style ───────────────────────────────── */
+.kor-btn {
+  font-family: 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--kor-paper);
+  background: linear-gradient(180deg, #6b4423 0%, #4a2c15 100%);
+  border: 2px outset #8b5a2b;
+  border-radius: 3px;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 80ms ease;
+  letter-spacing: 0.02em;
+}
+.kor-btn:hover { transform: translateY(-1px); }
+.kor-btn:active { transform: translateY(1px); border-style: inset; }
+.kor-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+.kor-btn-blood {
+  background: linear-gradient(180deg, #a52a2a 0%, #6b1010 100%);
+  border-color: #b04040;
+}
+.kor-btn-gold {
+  background: linear-gradient(180deg, #d4a017 0%, #a0760c 100%);
+  border-color: #e8c050;
+  color: #2a1810;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.kor-btn-forest {
+  background: linear-gradient(180deg, #4a6b1f 0%, #2d4010 100%);
+  border-color: #6b8a30;
+}
+
+/* ── Inputs ──────────────────────────────────────────────────────────────── */
+.kor-input {
+  font-family: 'Times New Roman', serif;
+  font-size: 1rem;
+  background: rgba(255, 248, 220, 0.85);
+  border: 1px inset var(--kor-shadow);
+  color: var(--kor-ink);
+  padding: 0.4rem 0.6rem;
+  border-radius: 2px;
+  caret-color: var(--kor-blood);
+}
+.kor-input:focus {
+  outline: 2px solid var(--kor-gold);
+  outline-offset: 1px;
+}
+
+/* ── Forest grid (the "густой лес" — emoji at distance, 3D up close) ─────── */
+.kor-forest-bg {
+  background:
+    linear-gradient(180deg, #87ceeb 0%, #b0d68c 60%, #6b8b3d 100%);
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+  border: 3px ridge var(--kor-shadow);
+  border-radius: 4px;
+}
+
+.kor-tree-far {
+  position: absolute;
+  font-size: 2.2rem;
+  user-select: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transition: all 220ms ease;
+  cursor: pointer;
+}
+.kor-tree-far:hover { font-size: 2.6rem; }
+
+/* The "когда подходиш — преобразовываются в 3-хмерные" trick.
+   Pure CSS 3D — no WebGL. Each near-tree is a column of stacked div faces. */
+.kor-tree-near {
+  position: absolute;
+  width: 56px;
+  height: 96px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: all 320ms ease;
+}
+
+.kor-tree-near .kor-trunk {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 14px;
+  height: 36px;
+  background: linear-gradient(90deg, #4a2c15, #6b4423, #4a2c15);
+  transform: translateX(-50%) perspective(200px) rotateY(8deg);
+  border: 1px solid #2a1810;
+}
+
+.kor-tree-near .kor-crown {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 56px;
+  height: 60px;
+  transform: translateX(-50%);
+  transform-style: preserve-3d;
+}
+
+.kor-tree-near .kor-crown-face {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #4a8530 0%, #2d5016 100%);
+  border: 1px solid #1a3008;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.kor-tree-near .kor-crown-face.f1 { transform: rotateY(0deg) translateZ(20px); }
+.kor-tree-near .kor-crown-face.f2 { transform: rotateY(120deg) translateZ(20px); filter: brightness(0.8); }
+.kor-tree-near .kor-crown-face.f3 { transform: rotateY(240deg) translateZ(20px); filter: brightness(0.6); }
+
+@keyframes kor-tree-grow {
+  from { transform: scale(0.4) translateY(20px); opacity: 0; }
+  to   { transform: scale(1)   translateY(0);    opacity: 1; }
+}
+.kor-tree-near { animation: kor-tree-grow 320ms ease-out both; }
+
+/* Wooden hut (домик деревяный) */
+.kor-hut {
+  position: absolute;
+  font-size: 2rem;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+}
+
+/* ── Korovan caravan ─────────────────────────────────────────────────────── */
+.kor-korovan {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1em;
+  font-size: 2.4rem;
+  filter: drop-shadow(2px 3px 1px rgba(42, 24, 16, 0.5));
+  animation: kor-walk 2.4s ease-in-out infinite;
+}
+@keyframes kor-walk {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  25%      { transform: translateX(-2px) translateY(-2px); }
+  75%      { transform: translateX(2px) translateY(-2px); }
+}
+
+/* ── Modal (Daggerfall-style window) ─────────────────────────────────────── */
+.kor-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 12, 4, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+  backdrop-filter: blur(2px);
+}
+.kor-modal {
+  max-width: 640px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  background:
+    linear-gradient(180deg, #d4c090 0%, #b8a070 100%);
+  border: 3px ridge #8b5a2b;
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+.kor-modal::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px dashed rgba(42, 24, 16, 0.4);
+  pointer-events: none;
+  border-radius: 3px;
+}
+
+/* ── Body parts HUD ──────────────────────────────────────────────────────── */
+.kor-body-hud {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  white-space: pre;
+  color: var(--kor-ink);
+  background: rgba(255, 248, 220, 0.6);
+  padding: 0.75rem;
+  border: 1px solid var(--kor-shadow);
+  display: inline-block;
+}
+.kor-limb-ok         { color: var(--kor-forest); }
+.kor-limb-wounded    { color: var(--kor-blood); animation: kor-bleed 1s steps(2) infinite; }
+.kor-limb-lost       { color: #555; text-decoration: line-through; }
+.kor-limb-prosthetic { color: #4a4a4a; font-weight: 700; }
+
+@keyframes kor-bleed {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.4; }
+}
+
+/* ── Eye-blindness overlay (выколоть глаз → полэкрана не видно) ──────────── */
+.kor-eye-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50vw;
+  background: #000;
+  z-index: 90;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+}
+.kor-eye-overlay.left  { left: 0; }
+.kor-eye-overlay.right { right: 0; }
+
+/* ── Bleed vignette while bleeding timer ticks ───────────────────────────── */
+.kor-bleed-vignette {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 88;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(139, 0, 0, 0.5) 100%);
+  animation: kor-bleed-pulse 1.4s ease-in-out infinite;
+}
+@keyframes kor-bleed-pulse {
+  0%, 100% { opacity: 0.6; }
+  50%      { opacity: 1; }
+}
+
+/* ── Glitch transition (cyber → fantasy) ─────────────────────────────────── */
+.kor-glitch-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Share Tech Mono', monospace;
+  color: #00f0ff;
+  overflow: hidden;
+}
+.kor-glitch-text {
+  font-size: clamp(1rem, 3vw, 1.6rem);
+  letter-spacing: 0.15em;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
+/* ── Confirm prompt (the 18+ gate before entering) ───────────────────────── */
+.kor-prompt {
+  background: linear-gradient(180deg, #1a1208 0%, #0a0604 100%);
+  color: #d4c090;
+  border: 2px solid #8b5a2b;
+  font-family: 'Times New Roman', serif;
+  padding: 1.5rem 2rem;
+  max-width: 480px;
+}
+
+/* ── DJVA GODA — final screen ─────────────────────────────────────────────── */
+.kor-finale-bg {
+  background:
+    radial-gradient(ellipse at center top, rgba(255, 200, 100, 0.4), transparent 60%),
+    linear-gradient(180deg, #2a1810 0%, #5a3820 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.kor-finale-text {
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 5rem);
+  color: #ffd700;
+  text-align: center;
+  text-shadow:
+    0 0 24px rgba(255, 215, 0, 0.6),
+    3px 3px 0 #8b0000,
+    6px 6px 0 rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+/* ── Inventory chip ──────────────────────────────────────────────────────── */
+.kor-inv-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.6rem;
+  background: rgba(255, 248, 220, 0.7);
+  border: 1px solid var(--kor-shadow);
+  border-radius: 3px;
+  font-size: 0.9rem;
+  margin: 0.15rem;
+}
+
+/* ── Combat log (бои с трупами 3д) ───────────────────────────────────────── */
+.kor-combat-log {
+  background: #1a1208;
+  color: #d4c090;
+  font-family: 'Courier New', monospace;
+  padding: 0.8rem;
+  border: 1px inset #8b5a2b;
+  max-height: 160px;
+  overflow-y: auto;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+.kor-combat-log .kor-log-hit  { color: #ff6060; }
+.kor-combat-log .kor-log-loot { color: #ffd700; }
+.kor-combat-log .kor-log-info { color: #87ceeb; }
+.kor-combat-log .kor-log-kill { color: #b8860b; font-weight: 700; }
+
+/* ── Jump animation (можно прыгать) ──────────────────────────────────────── */
+@keyframes kor-jump {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-30px); }
+}
+.kor-jump { animation: kor-jump 480ms ease-out; }
+
+/* ── Hero figure (the avatar emoji that gets dismembered) ────────────────── */
+.kor-hero {
+  display: inline-block;
+  font-size: 3.4rem;
+  text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  user-select: none;
+  transition: transform 120ms ease;
+}
+.kor-hero:hover { transform: scale(1.05); }
+
+/* Walk-speed reduction when leg is lost */
+body.korovan-mode.kor-leg-crawl  .kor-hero { animation: kor-jump 1600ms ease-out infinite; }
+body.korovan-mode.kor-leg-wheel  .kor-hero { animation: kor-jump 800ms ease-out infinite; }
